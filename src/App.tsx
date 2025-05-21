@@ -34,7 +34,7 @@ function App() {
     <div>
       <nav className="flex justify-center items-center bg-[#ED1472] py-4 gap-12 relative">
         <img
-          src="/src/assets/mcwsalogowhite.png"
+          src={`${import.meta.env.BASE_URL}mcwsalogowhite.png`}
           alt="MCWSA Logo"
           className="absolute left-5 top-2 -translate-y-1/2 w-16 h-16 object-contain drop-shadow-lg cursor-pointer"
           style={{ zIndex: 10 }}
