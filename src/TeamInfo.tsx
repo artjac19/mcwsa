@@ -1,5 +1,4 @@
 export default function TeamInfo() {
-<<<<<<< HEAD
   return (
     <div className="max-w-3xl mx-auto mt-8">
       <div className="text-center text-2xl font-bold font-merriweather mb-8">Team Info</div>
@@ -160,8 +159,4 @@ export default function TeamInfo() {
       </section>
     </div>
   );
-=======
-  return <div className="mt-[80px] text-center text-2xl font-bold mt-8" style={{backgroundColor:'#ffe4e1'}}>Team Info</div>;
->>>>>>> 0234c6365952f7d04f232312acc2b7699cb31b4a
 }
-
