@@ -10,6 +10,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 @import "tailwindcss";
 
+html {
+  scrollbar-gutter: stable;
+  overflow-x: hidden;
+}
+
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-slideDown {
+  animation: slideDown 0.3s cubic-bezier(0.4,0,0.2,1) both;
+}
+
+
 /* Custom base styles */
 :root {
   font-family: 'Montserrat', sans-serif;
@@ -22,3 +43,33 @@ h1, h2, h3, h4, h5, h6 {
 body {
   min-height: 100vh;
 }
+
+/* Tournament schedule table styles */
+.tournament-date {
+  white-space: nowrap;
+  min-width: 110px;
+}
+
+.tournament-name {
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* Schedule row background colors */
+:root {
+  --schedule-row-1: #f8f0f4;
+  --schedule-row-2: #fdf7fa;
+  --schedule-header: #ED1472;
+}
+
+/* Default table styling for ALL tables */
+table {
+  @apply w-full border-collapse rounded-lg overflow-hidden;
+}
+th, td {
+  @apply py-2 md:py-3 px-2 md:px-4 text-sm md:text-base;
+}
+th {
+  @apply text-left font-semibold;
+}
+
