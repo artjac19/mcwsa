@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 
 function Home() {
@@ -180,6 +179,103 @@ function Home() {
           </div>
         </div>
         </div> {/* Close the max-width container div */}
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 lg:mb-8 text-center mt-16">All Stars 2025</h2>
+        <div className="max-w-[1000px] mx-auto w-full">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-16 w-full mb-10">
+          {/* Sponsors section */}
+          <div className="flex-1 flex flex-col justify-center items-center h-full">
+            <h3 className="text-xl md:text-2xl font-semibold mb-4 text-center w-full">Thank you to our sponsors</h3>
+            <img src={`${import.meta.env.BASE_URL}sponsors.PNG`} alt="Sponsors" className="w-[400px] max-w-full mb-4 rounded shadow" />
+          </div>
+          {/* Congrats/Skiers section */}
+          <div className="flex-1 flex flex-col items-center justify-center">
+            <h3 className="text-xl md:text-2xl font-semibold mb-4 text-center">Congrats to our skiers</h3>
+            <div className="grid grid-cols-2 gap-4 w-full max-w-md">
+              <img src={`${import.meta.env.BASE_URL}allstars1.JPG`} alt="All Star 1" className="rounded shadow w-full object-cover aspect-[4/5]" />
+              <img src={`${import.meta.env.BASE_URL}allstars2.jpeg`} alt="All Star 2" className="rounded shadow w-full object-cover aspect-[4/5]" />
+              <img src={`${import.meta.env.BASE_URL}allstars3.JPG`} alt="All Star 3" className="rounded shadow w-full object-cover object-left aspect-[4/5]" />
+              <img src={`${import.meta.env.BASE_URL}allstars4.JPG`} alt="All Star 4" className="rounded shadow w-full object-cover aspect-[4/5]" />
+            </div>
+          </div>
+          </div>
+        </div>
+        <h3 className="text-2xl font-bold mb-4 mt-8 text-center">Roster</h3>
+        <div className="overflow-x-auto max-w-2xl mx-auto mb-12">
+          <table className="w-full border-collapse rounded-lg overflow-hidden bg-white shadow">
+            <thead>
+              <tr className="bg-[#ED1472] text-white">
+                <th className="py-2 px-4">Women</th>
+                <th className="py-2 px-4">Men</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="bg-[#fdf7fa]">
+                <td className="py-2 px-4">Davis, Kelci</td>
+                <td className="py-2 px-4">Anderson, Brett</td>
+              </tr>
+              <tr className="bg-[#f8f0f4]">
+                <td className="py-2 px-4">Dosch, Dallas</td>
+                <td className="py-2 px-4">Artang, Jake</td>
+              </tr>
+              <tr className="bg-[#fdf7fa]">
+                <td className="py-2 px-4">Fischette, Megan</td>
+                <td className="py-2 px-4">Budzynski, Drew</td>
+              </tr>
+              <tr className="bg-[#f8f0f4]">
+                <td className="py-2 px-4">Kneeley, Lucy</td>
+                <td className="py-2 px-4">Criel, Scott</td>
+              </tr>
+              <tr className="bg-[#fdf7fa]">
+                <td className="py-2 px-4">Leff, Kayla</td>
+                <td className="py-2 px-4">Fiedler, William</td>
+              </tr>
+              <tr className="bg-[#f8f0f4]">
+                <td className="py-2 px-4">Lipski, Sydnie</td>
+                <td className="py-2 px-4">Freitag, Matthew</td>
+              </tr>
+              <tr className="bg-[#fdf7fa]">
+                <td className="py-2 px-4">O'Callaghan, Cal</td>
+                <td className="py-2 px-4">Freitag, Sean</td>
+              </tr>
+              <tr className="bg-[#f8f0f4]">
+                <td className="py-2 px-4">Parham, Erin</td>
+                <td className="py-2 px-4">Graves, Alex</td>
+              </tr>
+              <tr className="bg-[#fdf7fa]">
+                <td className="py-2 px-4">Passehl, Faith</td>
+                <td className="py-2 px-4">Hack, Mitchell</td>
+              </tr>
+              <tr className="bg-[#f8f0f4]">
+                <td className="py-2 px-4">Plessner, Keelie</td>
+                <td className="py-2 px-4">Hamilton, Luke</td>
+              </tr>
+              <tr className="bg-[#fdf7fa]">
+                <td className="py-2 px-4">Poppe, Mikayla</td>
+                <td className="py-2 px-4">Hawley, Jacob</td>
+              </tr>
+              <tr className="bg-[#f8f0f4]">
+                <td className="py-2 px-4">Rose, Amanda</td>
+                <td className="py-2 px-4">Heilman, Jack</td>
+              </tr>
+              <tr className="bg-[#fdf7fa]">
+                <td className="py-2 px-4">Thatcher, Lily</td>
+                <td className="py-2 px-4">Hughes, Aidan</td>
+              </tr>
+              <tr className="bg-[#f8f0f4]">
+                <td className="py-2 px-4">VanDenElzen, Kennedy</td>
+                <td className="py-2 px-4">Maccarone, Will</td>
+              </tr>
+              <tr className="bg-[#fdf7fa]">
+                <td className="py-2 px-4">Wardle, Katya</td>
+                <td className="py-2 px-4">Strachan, Jack</td>
+              </tr>
+              <tr className="bg-[#f8f0f4]">
+                <td className="py-2 px-4">Wendricks, Brooklyn</td>
+                <td className="py-2 px-4">Wein, Joshua</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

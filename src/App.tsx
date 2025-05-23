@@ -33,7 +33,6 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const ActiveComponent = tabComponents[activeTab as keyof typeof tabComponents];
 
-  // Close menu on tab click or X
   const handleMenuTab = (tab: string) => {
     setActiveTab(tab);
     setMenuOpen(false);
@@ -53,7 +52,7 @@ function App() {
           {tabs.map((tab) => (
             <button
               key={tab}
-              className={`relative bg-transparent border-none text-white font-medium text-[clamp(0.9rem,1.5vw,1.5rem)] px-2 py-2 cursor-pointer outline-none transition-colors duration-200 group whitespace-nowrap ${activeTab === tab ? "opacity-100" : "opacity-70"}`}
+              className={`relative bg-transparent border-none text-white font-medium text-[clamp(0.9rem,1.5vw,1.35rem)] px-2 py-2 cursor-pointer outline-none transition-colors duration-200 group whitespace-nowrap ${activeTab === tab ? "opacity-100" : "opacity-70"}`}
               onClick={() => setActiveTab(tab)}
             >
               {tab}
