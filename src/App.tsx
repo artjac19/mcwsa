@@ -79,7 +79,7 @@ function App() {
         </div>
         {/* Hamburger Icon for Mobile */}
         <button
-          className="sm:hidden mx-auto p-3 bg-transparent border-none outline-none z-50 h-20 max-h-20 overflow-y-hidden z-50"
+          className="sm:hidden mx-auto p-3 bg-transparent border-none outline-none h-20 max-h-20 overflow-y-hidden z-50"
           style={{ minWidth: 48, minHeight: 48 }}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           onClick={() => setMenuOpen((v) => !v)}

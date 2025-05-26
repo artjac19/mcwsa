@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function HamburgerIcon({ open, size = 32 }: { open: boolean; size?: number }) {
   return open ? (
     // X icon
