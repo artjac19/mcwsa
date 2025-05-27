@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import FooterNav from './FooterNav';
 
 function Home() {
   const imageRef = useRef<HTMLDivElement>(null);
@@ -30,6 +31,7 @@ function Home() {
   }, [speed]);
 
   return (
+    <>
     <div className="flex flex-col w-full">
       {/* Show parallax div only if aspect > 4/3 */}
       {aspect > 4/3 && (
@@ -64,8 +66,8 @@ function Home() {
           right: aspect <= 4/3 ? 0 : undefined
         }}
       >
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 lg:mb-8 text-center">2025 TOURNEY SCHEDULE</h2>
-        
+        <div id="tourney-section"></div>
+        <h2 className="mt-8 text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 lg:mb-8 text-center">2025 TOURNEY SCHEDULE</h2>
         <div className="max-w-4xl mx-auto w-full sm:w-full md:w-4/5 lg:w-3/4 xl:w-2/3">
         
         <div className="mb-8">
@@ -80,27 +82,27 @@ function Home() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-[#f8f0f4]">
+                <tr>
                   <td className="tournament-date">Sep 6-7</td>
                   <td className="tournament-name">Hawkeye Skifest</td>
                   <td>Evansdale, IA</td>
                 </tr>
-                <tr className="bg-[#fdf7fa]">
+                <tr>
                   <td className="tournament-date">Sep 6-7</td>
                   <td className="tournament-name">Mo State Fall Showdown</td>
                   <td>Hartville, MO</td>
                 </tr>
-                <tr className="bg-[#f8f0f4]">
+                <tr>
                   <td className="tournament-date">Sep 13-14</td>
                   <td className="tournament-name">Midwest Shredfest</td>
                   <td>Center City, MN</td>
                 </tr>
-                <tr className="bg-[#fdf7fa]">
+                <tr>
                   <td className="tournament-date">Sep 13-14</td>
                   <td className="tournament-name">Husker Ripfest</td>
                   <td>Ashland, NE</td>
                 </tr>
-                <tr className="bg-[#f8f0f4]">
+                <tr>
                   <td className="tournament-date">Sep 20-21</td>
                   <td className="tournament-name">Great Plains Conference Championships</td>
                   <td>Cambridge, IA</td>
@@ -122,27 +124,27 @@ function Home() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-[#f8f0f4]">
+                <tr>
                   <td className="tournament-date">Sep 6-7</td>
                   <td className="tournament-name">Allentucky Waterbowl</td>
                   <td>Conklin, MI</td>
                 </tr>
-                <tr className="bg-[#fdf7fa]">
+                <tr>
                   <td className="tournament-date">Sep 6-7</td>
                   <td className="tournament-name">Southern Ohio Challenge</td>
                   <td>Harrison, OH</td>
                 </tr>
-                <tr className="bg-[#f8f0f4]">
+                <tr>
                   <td className="tournament-date">Sep 13-14</td>
                   <td className="tournament-name">Great Lakes Fling</td>
                   <td>Van Wert, OH</td>
                 </tr>
-                <tr className="bg-[#fdf7fa]">
+                <tr>
                   <td className="tournament-date">Sep 13-14</td>
                   <td className="tournament-name">Spartan Ripfest</td>
                   <td>South Haven, MI</td>
                 </tr>
-                <tr className="bg-[#f8f0f4]">
+                <tr>
                   <td className="tournament-date">Sep 20-21</td>
                   <td className="tournament-name">Great Lakes Conference Championship</td>
                   <td>Van Wert, OH</td>
@@ -153,7 +155,7 @@ function Home() {
         </div>
         
         <div className="mb-8">
-          <h3 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4 font-['Montserrat']">Championships</h3>
+          <h3 className="text-xl md:text-2xl font-semibold md:mb-4 font-['Montserrat']">Championships</h3>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse rounded-lg overflow-hidden">
               <thead>
@@ -164,12 +166,12 @@ function Home() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-[#f8f0f4]">
+                <tr>
                   <td className="tournament-date">Sep 27-28</td>
                   <td className="tournament-name">2025 Collegiate Regionals</td>
                   <td>PITS - Decatur, IL</td>
                 </tr>
-                <tr className="bg-[#fdf7fa]">
+                <tr>
                   <td className="tournament-date">October 16-18</td>
                   <td className="tournament-name">2025 Collegiate Nationals</td>
                   <td>Imperial Lakes - Imperial, CA</td>
@@ -179,6 +181,7 @@ function Home() {
           </div>
         </div>
         </div> {/* Close the max-width container div */}
+        <div id="allstars-section"></div>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 lg:mb-8 text-center mt-16">All Stars 2025</h2>
         <div className="max-w-[1000px] mx-auto w-full">
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 w-full mb-10">
@@ -209,67 +212,67 @@ function Home() {
               </tr>
             </thead>
             <tbody>
-              <tr className="bg-[#fdf7fa]">
+              <tr>
                 <td className="py-2 px-4">Davis, Kelci</td>
                 <td className="py-2 px-4">Anderson, Brett</td>
               </tr>
-              <tr className="bg-[#f8f0f4]">
+              <tr>
                 <td className="py-2 px-4">Dosch, Dallas</td>
                 <td className="py-2 px-4">Artang, Jake</td>
               </tr>
-              <tr className="bg-[#fdf7fa]">
+              <tr>
                 <td className="py-2 px-4">Fischette, Megan</td>
                 <td className="py-2 px-4">Budzynski, Drew</td>
               </tr>
-              <tr className="bg-[#f8f0f4]">
+              <tr>
                 <td className="py-2 px-4">Kneeley, Lucy</td>
                 <td className="py-2 px-4">Criel, Scott</td>
               </tr>
-              <tr className="bg-[#fdf7fa]">
+              <tr>
                 <td className="py-2 px-4">Leff, Kayla</td>
                 <td className="py-2 px-4">Fiedler, William</td>
               </tr>
-              <tr className="bg-[#f8f0f4]">
+              <tr>
                 <td className="py-2 px-4">Lipski, Sydnie</td>
                 <td className="py-2 px-4">Freitag, Matthew</td>
               </tr>
-              <tr className="bg-[#fdf7fa]">
+              <tr>
                 <td className="py-2 px-4">O'Callaghan, Cal</td>
                 <td className="py-2 px-4">Freitag, Sean</td>
               </tr>
-              <tr className="bg-[#f8f0f4]">
+              <tr>
                 <td className="py-2 px-4">Parham, Erin</td>
                 <td className="py-2 px-4">Graves, Alex</td>
               </tr>
-              <tr className="bg-[#fdf7fa]">
+              <tr>
                 <td className="py-2 px-4">Passehl, Faith</td>
                 <td className="py-2 px-4">Hack, Mitchell</td>
               </tr>
-              <tr className="bg-[#f8f0f4]">
+              <tr>
                 <td className="py-2 px-4">Plessner, Keelie</td>
                 <td className="py-2 px-4">Hamilton, Luke</td>
               </tr>
-              <tr className="bg-[#fdf7fa]">
+              <tr>
                 <td className="py-2 px-4">Poppe, Mikayla</td>
                 <td className="py-2 px-4">Hawley, Jacob</td>
               </tr>
-              <tr className="bg-[#f8f0f4]">
+              <tr>
                 <td className="py-2 px-4">Rose, Amanda</td>
                 <td className="py-2 px-4">Heilman, Jack</td>
               </tr>
-              <tr className="bg-[#fdf7fa]">
+              <tr>
                 <td className="py-2 px-4">Thatcher, Lily</td>
                 <td className="py-2 px-4">Hughes, Aidan</td>
               </tr>
-              <tr className="bg-[#f8f0f4]">
+              <tr>
                 <td className="py-2 px-4">VanDenElzen, Kennedy</td>
                 <td className="py-2 px-4">Maccarone, Will</td>
               </tr>
-              <tr className="bg-[#fdf7fa]">
+              <tr>
                 <td className="py-2 px-4">Wardle, Katya</td>
                 <td className="py-2 px-4">Strachan, Jack</td>
               </tr>
-              <tr className="bg-[#f8f0f4]">
+              <tr>
                 <td className="py-2 px-4">Wendricks, Brooklyn</td>
                 <td className="py-2 px-4">Wein, Joshua</td>
               </tr>
@@ -278,6 +281,13 @@ function Home() {
         </div>
       </div>
     </div>
+  <FooterNav
+    links={[
+      { label: 'Tourney', id: 'tourney-section' },
+      { label: 'All Stars', id: 'allstars-section' }
+    ]}
+  />
+  </>
   );
 }
 

@@ -1,7 +1,10 @@
+import FooterNav from "./FooterNav";
+
 export default function TeamInfo() {
   return (
-    <div className="max-w-3xl mx-auto mt-8">
-      <div className="text-center text-2xl font-bold font-merriweather mb-8">Team Info</div>
+    <>
+      <div className="max-w-3xl mx-auto mt-4">
+        <div className="text-center text-2xl font-bold font-merriweather mb-8">Team Info</div>
       <section id="checklist-section" className="bg-white rounded shadow p-6 mb-8">
         <h2 className="text-xl font-semibold mb-4">Checklist</h2>
         <p className="mb-4">The following checklist contains everything your team needs to complete in order to be eligible to ski at tournaments.</p>
@@ -101,62 +104,70 @@ export default function TeamInfo() {
         <h2 className="text-xl font-semibold mb-4">Teams</h2>
         <div className="flex flex-col md:flex-row gap-8">
           <div className="flex-1 overflow-x-auto">
-            <table className="min-w-[200px] w-full border border-gray-300 rounded">
+            <table className="min-w-[200px] w-full border-collapse rounded-lg overflow-hidden">
               <thead>
-                <tr className="bg-gray-100">
+                <tr>
                   <th className="text-left px-4 py-2 text-lg font-semibold bg-[#ED1472] text-white">Great Plains Teams</th>
                 </tr>
               </thead>
               <tbody>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Eau Claire</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Illinois</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Iowa</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Iowa State</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Kansas</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Kansas State</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">La Crosse</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Madison</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Marquette</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Minnesota</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Missouri State</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Nebraska</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Southern Illinois</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Stevens Point</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Stout</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Wichita State</td></tr>
+                <tr><td className="px-4 py-1">Eau Claire</td></tr>
+                <tr><td className="px-4 py-1">Illinois</td></tr>
+                <tr><td className="px-4 py-1">Iowa</td></tr>
+                <tr><td className="px-4 py-1">Iowa State</td></tr>
+                <tr><td className="px-4 py-1">Kansas</td></tr>
+                <tr><td className="px-4 py-1">Kansas State</td></tr>
+                <tr><td className="px-4 py-1">La Crosse</td></tr>
+                <tr><td className="px-4 py-1">Madison</td></tr>
+                <tr><td className="px-4 py-1">Marquette</td></tr>
+                <tr><td className="px-4 py-1">Minnesota</td></tr>
+                <tr><td className="px-4 py-1">Missouri State</td></tr>
+                <tr><td className="px-4 py-1">Nebraska</td></tr>
+                <tr><td className="px-4 py-1">Southern Illinois</td></tr>
+                <tr><td className="px-4 py-1">Stevens Point</td></tr>
+                <tr><td className="px-4 py-1">Stout</td></tr>
+                <tr><td className="px-4 py-1">Wichita State</td></tr>
               </tbody>
             </table>
           </div>
           <div className="flex-1 overflow-x-auto">
-            <table className="min-w-[200px] w-full border border-gray-300 rounded">
+            <table className="min-w-[200px] w-full border-collapse rounded-lg overflow-hidden">
               <thead>
-                <tr className="bg-gray-100">
+                <tr>
                   <th className="text-left px-4 py-2 text-lg font-semibold bg-[#ED1472] text-white">Great Lakes Teams</th>
                 </tr>
               </thead>
               <tbody>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Akron</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Ball State</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Bowling Green</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Cincinnati</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Dayton</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Grand Valley State</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Indiana</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Miami University</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Michigan</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Michigan State</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Notre Dame</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Ohio University</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Ohio State</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Purdue</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Western Michigan</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">West Virginia</td></tr>
-                <tr><td className="px-4 py-1 border border-gray-400 rounded-md bg-gray-100">Wittenberg University</td></tr>
+                <tr><td className="px-4 py-1">Akron</td></tr>
+                <tr><td className="px-4 py-1">Ball State</td></tr>
+                <tr><td className="px-4 py-1">Bowling Green</td></tr>
+                <tr><td className="px-4 py-1">Cincinnati</td></tr>
+                <tr><td className="px-4 py-1">Dayton</td></tr>
+                <tr><td className="px-4 py-1">Grand Valley State</td></tr>
+                <tr><td className="px-4 py-1">Indiana</td></tr>
+                <tr><td className="px-4 py-1">Miami University</td></tr>
+                <tr><td className="px-4 py-1">Michigan</td></tr>
+                <tr><td className="px-4 py-1">Michigan State</td></tr>
+                <tr><td className="px-4 py-1">Notre Dame</td></tr>
+                <tr><td className="px-4 py-1">Ohio University</td></tr>
+                <tr><td className="px-4 py-1">Ohio State</td></tr>
+                <tr><td className="px-4 py-1">Purdue</td></tr>
+                <tr><td className="px-4 py-1">Western Michigan</td></tr>
+                <tr><td className="px-4 py-1">West Virginia</td></tr>
+                <tr><td className="px-4 py-1">Wittenberg University</td></tr>
               </tbody>
             </table>
           </div>
         </div>
       </section>
     </div>
+    <FooterNav
+      links={[
+        { label: "Checklist", id: "checklist-section" },
+        { label: "Point Opportunities", id: "points-section" },
+        { label: "Teams", id: "teams-section" },
+      ]}
+    />
+    </>
   );
 }

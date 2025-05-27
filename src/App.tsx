@@ -33,6 +33,7 @@ function App() {
   const handleMenuTab = (tab: string) => {
     setActiveTab(tab);
     setMenuOpen(false);
+    window.scrollTo({ top: 0 });
   };
 
   return (
@@ -45,7 +46,7 @@ function App() {
           onClick={() => window.location.reload()}
         />
         {/* Desktop Tabs */}
-        <div className="hidden sm:flex flex-1 min-w-0 justify-evenly items-center pl-[15vw] pr-[5vw] h-20 overflow-x-hidden overflow-y-hidden">
+        <div className="hidden lg:flex flex-1 min-w-0 justify-evenly items-center pl-[15vw] pr-[5vw] h-20 overflow-x-hidden overflow-y-hidden">
           {tabs.map((tab) =>
   tab === "Merchandise" ? (
     <a
@@ -66,7 +67,10 @@ function App() {
     <button
       key={tab}
       className={`relative bg-transparent border-none text-white font-medium text-xl px-6 py-3 cursor-pointer outline-none transition-colors duration-200 group ${activeTab === tab ? "opacity-100" : "opacity-70"}`}
-      onClick={() => setActiveTab(tab)}
+      onClick={() => {
+        setActiveTab(tab);
+        window.scrollTo({ top: 0 });
+      }}
     >
       {tab}
       <span
@@ -79,7 +83,7 @@ function App() {
         </div>
         {/* Hamburger Icon for Mobile */}
         <button
-          className="sm:hidden mx-auto p-3 bg-transparent border-none outline-none h-20 max-h-20 overflow-y-hidden z-50"
+          className="lg:hidden mx-auto p-3 bg-transparent border-none outline-none h-20 max-h-20 overflow-y-hidden z-50"
           style={{ minWidth: 48, minHeight: 48 }}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           onClick={() => setMenuOpen((v) => !v)}
@@ -94,7 +98,7 @@ function App() {
                 {tabs.map((tab) => (
                   <button
                     key={tab}
-                    className={`relative z-30 bg-transparent border-none text-white font-medium text-base sm:text-lg px-2 py-2 cursor-pointer outline-none transition-colors duration-200 group ${activeTab === tab ? "opacity-100" : "opacity-70"}`}
+                    className={`relative z-30 bg-transparent border-none text-white font-medium text-base lg:text-lg px-2 py-2 cursor-pointer outline-none transition-colors duration-200 group ${activeTab === tab ? "opacity-100" : "opacity-70"}`}
                     onClick={() => handleMenuTab(tab)}
                   >
                     {tab}
@@ -109,35 +113,9 @@ function App() {
           </div>
         )}
       </nav>
-      <div className="mt-8">
+      <div>
         <ActiveComponent />
       </div>
-      {/* Footer Navigation - only for Team Info page */}
-      {activeTab === "Team Info" && (
-        <footer className="fixed bottom-0 left-0 w-full bg-[#ED1472] z-50 border-t border-pink-700">
-          <nav className="flex justify-center items-center gap-8 py-3">
-            {[
-              { label: "Checklist", id: "checklist-section" },
-              { label: "Point Opportunities", id: "points-section" },
-              { label: "Teams", id: "teams-section" },
-            ].map(({ label, id }) => (
-              <a
-                key={id}
-                href={`#${id}`}
-                onClick={e => {
-                  e.preventDefault();
-                  const el = document.getElementById(id);
-                  if (el) el.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="text-white font-medium text-lg px-4 py-2 rounded hover:bg-pink-700 transition-colors duration-200"
-                style={{ textDecoration: 'none' }}
-              >
-                {label}
-              </a>
-            ))}
-          </nav>
-        </footer>
-      )}
     </div>
   );
 }
