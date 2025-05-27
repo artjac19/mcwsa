@@ -1,7 +1,7 @@
 export default function TeamInfo() {
   return (
     <div className="max-w-3xl mx-auto mt-8">
-      <div className="text-center text-2xl font-bold font-merriweather mb-8">Team Info</div>
+      <div className="text-center text-2xl font-bold font-merriweather mb-8 mt-32">Team Info</div>
       <section id="checklist-section" className="bg-white rounded shadow p-6 mb-8">
         <h2 className="text-xl font-semibold mb-4">Checklist</h2>
         <p className="mb-4">The following checklist contains everything your team needs to complete in order to be eligible to ski at tournaments.</p>
