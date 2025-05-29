@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import News from "./News";
 import FooterNav from './FooterNav';
 
 function Home() {
@@ -66,6 +67,20 @@ function Home() {
           right: aspect <= 4/3 ? 0 : undefined
         }}
       >
+        <div id="news" className="mb-8"></div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">News</h2>
+          <News 
+            headline="Academic All-Star Team"
+            imageUrl={`${import.meta.env.BASE_URL}ncwsaAllStars.webp`}
+            linkUrl="https://thencwsa.org/2025-ncwsa-academic-all-stars/"
+            description="NCWSA is starting an Academic All-Star Team to recognize academic excellence in collegiate skiers who graduated this year!! The nomination deadline is June 15th and the team will be announced at the end of June! Requirements are: 1. Having graduated in the spring semester, winter quarter, or spring quarter 2. 3.5+ GPA. 3. Skied for the NCWSA."
+          />
+          <News 
+            headline="Collegiate Corn Support Squad"
+            imageUrl={`${import.meta.env.BASE_URL}corn.jpg`}
+            linkUrl="https://tlcornfest.com/ncwsa"
+            description="Hello! This year the NCWSA is partnering with Twin Lakes CornFest! As the Collegiate Corn Support Squad we’ll be helping serve the festival crowd the all-you-can-eat corn. It’ll be a fun event (free admission if you volunteer) that current skiers and alumni can sign up for. Please fill out the interest form to get more information later in the summer."
+          />
         <div id="tourney-section"></div>
         <h2 className="mt-8 text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 lg:mb-8 text-center">2025 TOURNEY SCHEDULE</h2>
         <div className="max-w-4xl mx-auto w-full sm:w-full md:w-4/5 lg:w-3/4 xl:w-2/3">
@@ -283,6 +298,7 @@ function Home() {
     </div>
   <FooterNav
     links={[
+      { label: 'News', id: 'news' },
       { label: 'Tourney', id: 'tourney-section' },
       { label: 'All Stars', id: 'allstars-section' }
     ]}

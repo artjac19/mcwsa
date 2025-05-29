@@ -49,7 +49,7 @@ const FooterNav: React.FC<FooterNavProps> = ({ links }) => {
                   window.scrollTo({ top: y, behavior: 'smooth' });
                 }
               }}
-              className="text-white font-medium text-lg px-4 py-2 h-full flex items-center rounded transition-colors duration-200 hover:text-[#c2c1c1e6]"
+              className="text-white font-medium text-[16px] px-4 py-2 h-full flex items-center rounded transition-colors duration-200 hover:text-[#c2c1c1e6]"
               style={{ textDecoration: 'none' }}
             >
               {label}
