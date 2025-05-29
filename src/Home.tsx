@@ -79,7 +79,7 @@ function Home() {
             headline="Collegiate Corn Support Squad"
             imageUrl={`${import.meta.env.BASE_URL}corn.jpg`}
             linkUrl="https://tlcornfest.com/ncwsa"
-            description="Hello! This year the NCWSA is partnering with Twin Lakes CornFest! As the Collegiate Corn Support Squad we’ll be helping serve the festival crowd the all-you-can-eat corn. It’ll be a fun event (free admission if you volunteer) that current skiers and alumni can sign up for. Please fill out the interest form to get more information later in the summer."
+            description="This year the NCWSA is partnering with Twin Lakes CornFest! As the Collegiate Corn Support Squad we’ll be helping serve the festival crowd the all-you-can-eat corn. It’ll be a fun event (free admission if you volunteer) that current skiers and alumni can sign up for. Please fill out the interest form to get more information later in the summer."
           />
         <div id="tourney-section" className="mb-8"></div>
         <h2 className="mt-20 text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 lg:mb-8 text-center">2025 TOURNEY SCHEDULE</h2>
