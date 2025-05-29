@@ -81,8 +81,8 @@ function Home() {
             linkUrl="https://tlcornfest.com/ncwsa"
             description="Hello! This year the NCWSA is partnering with Twin Lakes CornFest! As the Collegiate Corn Support Squad we’ll be helping serve the festival crowd the all-you-can-eat corn. It’ll be a fun event (free admission if you volunteer) that current skiers and alumni can sign up for. Please fill out the interest form to get more information later in the summer."
           />
-        <div id="tourney-section"></div>
-        <h2 className="mt-8 text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 lg:mb-8 text-center">2025 TOURNEY SCHEDULE</h2>
+        <div id="tourney-section" className="mb-8"></div>
+        <h2 className="mt-20 text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 lg:mb-8 text-center">2025 TOURNEY SCHEDULE</h2>
         <div className="max-w-4xl mx-auto w-full sm:w-full md:w-4/5 lg:w-3/4 xl:w-2/3">
         
         <div className="mb-8">
