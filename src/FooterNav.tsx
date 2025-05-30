@@ -33,10 +33,10 @@ const FooterNav: React.FC<FooterNavProps> = ({ links }) => {
 
   return (
     <footer
-      className={`fixed left-0 w-full flex justify-center z-50 pointer-events-none bottom-4 ${visible ? animation : 'opacity-0 -bottom-20'}`}
+      className={`fixed bottom-4 left-0 right-0 mx-auto box-border flex justify-center z-50 pointer-events-none ${visible ? animation : 'opacity-0 -bottom-20'}`}
       style={{ willChange: 'transform', display: visible ? undefined : 'none' }}
     >
-      <nav className="flex justify-center items-stretch gap-0 bg-[#545454] rounded-xl px-6 shadow-lg pointer-events-auto">
+      <nav className="flex justify-center items-stretch space-x-0 gap-0 bg-[#545454] max-w-[95%] w-fit rounded-xl px-6 pointer-events-auto">
         {links.map(({ label, id }, idx) => (
           <React.Fragment key={id}>
             <a
@@ -49,13 +49,13 @@ const FooterNav: React.FC<FooterNavProps> = ({ links }) => {
                   window.scrollTo({ top: y, behavior: 'smooth' });
                 }
               }}
-              className="text-white font-medium text-[16px] px-4 py-2 h-full flex items-center rounded transition-colors duration-200 hover:text-[#c2c1c1e6]"
+              className="text-white font-medium text-[12px] md:text-[16px] px-4 py-2 h-full flex items-center rounded transition-colors duration-200 hover:text-[#c2c1c1e6]"
               style={{ textDecoration: 'none' }}
             >
-              {label}
+              {label}   
             </a>
             {idx < links.length - 1 && (
-              <span className="h-full w-1 bg-white mx-2" aria-hidden="true"></span>
+              <span className="self-stretch w-1 min-w-[4px] bg-white mx-2" aria-hidden="true"></span>
             )}
           </React.Fragment>
         ))}
