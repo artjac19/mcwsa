@@ -47,7 +47,7 @@ export default function AboutUs() {
         <div className="mt-8 p-6 bg-white rounded  text-center">
           <h2 className="text-2xl font-bold mb-2">Please welcome the 2023 Inaugural Hall of Fame Class!</h2>
           <p className="text-xl font-semibold mb-2">Congratulations to Christy Kingsmill</p>
-          <img src={`${import.meta.env.BASE_URL}Chrisy Kingsmill.png`} alt="Christy Kingsmill" className="w-1/2 mx-auto mb-4" />
+          <img src={`${import.meta.env.BASE_URL}Chrisy Kingsmill.webp`} alt="Christy Kingsmill" className="w-1/2 mx-auto mb-4" />
           <p className="text-left max-w-5xl mx-auto text-lg leading-relaxed">
             Christy Kingsmill has over 15 years of service between the MCWSA and NCWSA during which she influenced many positive 
             changes that helped grow the sport of collegiate water skiing for thousands of people. 
@@ -61,7 +61,7 @@ export default function AboutUs() {
         <div className="mt-8 p-6 bg-white rounded  text-center">
           <h2 className="text-2xl font-bold mb-2">Please welcome the 2022 Inaugural Hall of Fame Class!</h2>
           <p className="text-xl font-semibold mb-2">Congratulations to Jeff Surdej and Cris Kodiak!</p>
-          <img src={`${import.meta.env.BASE_URL}JeffSurdejandCrisKodiak.jpg`} alt="Jeff Surdej and Cris Kodiak" className="w-1/2 mx-auto mb-4" />
+          <img src={`${import.meta.env.BASE_URL}JeffSurdejandCrisKodiak.webp`} alt="Jeff Surdej and Cris Kodiak" className="w-1/2 mx-auto mb-4" />
           <p className="text-center italic mb-4">Jeff Surdej (left) and Cris Kodiak (right)</p>
           
           <div className="text-left mx-auto max-w-5xl mb-4">

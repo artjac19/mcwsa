@@ -27,7 +27,7 @@ export default function Resources() {
 
       <section className="mb-12">
         <img
-          src={`${import.meta.env.BASE_URL}official.png`}
+          src={`${import.meta.env.BASE_URL}official.webp`}
           alt="Becoming an Official"
           className="mx-auto mb-6 rounded shadow max-w-5xl h-auto w-full"
         />

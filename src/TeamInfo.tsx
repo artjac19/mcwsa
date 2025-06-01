@@ -163,7 +163,7 @@ export default function TeamInfo() {
     <FooterNav
       links={[
         { label: "Checklist", id: "checklist-section" },
-        { label: "Point Opportunities", id: "points-section" },
+        { label: "Points", id: "points-section" },
         { label: "Teams", id: "teams-section" },
       ]}
     />

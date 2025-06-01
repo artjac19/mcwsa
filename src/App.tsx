@@ -37,10 +37,13 @@ function App() {
     <div className="min-h-screen max-w-full overflow-x-hidden">
       <nav className="fixed top-0 left-0 right-0 flex justify-center items-stretch bg-[#ED1472] h-20 gap-4 md:gap-8 lg:gap-12 z-50 max-w-full overflow-x-hidden box-border overflow-y-hidden border-b-4 border-white lg:border-b-0">
         <img
-          src={`${import.meta.env.BASE_URL}mcwsalogowhite.png`}
+          src={`${import.meta.env.BASE_URL}mcwsalogowhite.webp`}
           alt="MCWSA Logo"
           className="absolute left-2 top-0 p-2 w-20 h-20 object-contain drop-shadow-lg cursor-pointer max-h-20 z-50"
-          onClick={() => window.location.reload()}
+          onClick={() => {
+            window.scrollTo({ top: 0 });
+            setTimeout(() => window.location.reload(), 50);
+          }}
         />
         {/* Desktop Tabs */}
         <div className="hidden lg:flex flex-1 min-w-0 justify-evenly items-center pl-[15vw] pr-[5vw] h-20 overflow-x-hidden overflow-y-hidden border-b-4 border-white">
