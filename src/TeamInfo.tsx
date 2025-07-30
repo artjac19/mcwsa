@@ -3,7 +3,7 @@ import FooterNav from "./FooterNav";
 export default function TeamInfo() {
   return (
     <>
-      <div className="max-w-3xl mx-auto mt-4">
+      <div className="max-w-5xl mx-auto mt-4">
         <div className="text-center text-2xl font-bold font-merriweather mb-8 mt-32">Team Info</div>
       <section id="checklist-section" className="bg-white rounded shadow p-6 mb-8">
         <h2 className="text-xl font-semibold mb-4">Checklist</h2>

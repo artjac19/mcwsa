@@ -1,7 +1,9 @@
+import FooterNav from "./FooterNav";
+
 export default function AboutUs() {
   return (
     <>
-      <div className="max-w-2xl mx-auto mt-24 p-8 bg-white rounded shadow text-center">
+      <div id="about-section" className="max-w-5xl mx-auto mt-24 p-8 bg-white rounded shadow text-center">
         <h1 className="text-3xl font-bold mb-4">About Us</h1>
         <p className="text-lg mb-4">
           The Midwest Collegiate Water Ski Association (MCWSA) is dedicated to promoting collegiate water skiing throughout the Midwest region. 
@@ -12,7 +14,7 @@ export default function AboutUs() {
         </p>
       </div>
 
-      <div className="max-w-2xl mx-auto mt-12 p-8 bg-white rounded shadow text-center">
+      <div id="hof-section" className="max-w-5xl mx-auto mt-12 p-8 bg-white rounded shadow text-center">
         <h1 className="text-3xl font-bold mb-4">Hall of Fame</h1>
         <p className="text-lg mb-4">
           The MCWSA Hall of Fame recognizes skiers, leaders, and officials whose dedication and competitive achievements have gone above and beyond to positively impact the sport throughout the Midwest region. Inductees are chosen by the Hall of Fame selection committee and inductions will take place at Winter Conference.
@@ -45,7 +47,7 @@ export default function AboutUs() {
           <h2 className="text-2xl font-bold mb-2">Please welcome the 2023 Inaugural Hall of Fame Class!</h2>
           <p className="text-xl font-semibold mb-2">Congratulations to Christy Kingsmill</p>
           <img src="public/Chrisy Kingsmill.png" alt="Christy Kingsmill" className="w-1/2 mx-auto mb-4" />
-          <p className="text-left max-w-2xl mx-auto">
+          <p className="text-left max-w-5xl mx-auto">
             Christy Kingsmill has over 15 years of service between the MCWSA and NCWSA during which she influenced many positive 
             changes that helped grow the sport of collegiate water skiing for thousands of people. 
             Aside from her contributions in an administrative role, Christy has made it a point to really get to know skiers on a personal level and act as a role model. 
@@ -63,7 +65,7 @@ export default function AboutUs() {
           
           <div className="text-left mx-auto max-w-xl mb-4">
             <h2 className="text-center mb-2">Jeff Surdej</h2>
-            <p className="text-left max-w-2xl mx-auto">
+            <p className="text-left max-w-5xl mx-auto">
           Jeff Surdej skied for Purdue University from Fall 1994 through Spring 1998 and helped turn Purdue University into a powerhouse in the Midwest that created a decade or more of dominance in the region. 
           Additionally, changes to the team structure helped the team grab elite recruits such as Cale Burdick to help build the longevity of the Purdue team’s dominance well after Jeff had graduated. 
           However, his greatest impact on the Midwest and collegiate skiing as a whole occurs off the water to this day. Jeff is the father of the Team Midwest Winter Conference, starting it with Chad Kodiak. 
@@ -79,7 +81,7 @@ export default function AboutUs() {
           </div>
           <div className="text-left mx-auto max-w-xl mb-4">
             <h2 className="text-center mb-2">Cris Kodiak</h2>
-            <p className="text-left max-w-2xl mx-auto">
+            <p className="text-left max-w-5xl mx-auto">
             Cris Kodiak Skied for Purdue University from 2001-2004, and held many leadership positions in his time there, 
             Team Secretary in 2002, Treasurer and Recruitment Chair 2003, Men’s Team Captain 2004. 
             His on the water accomplishments include 2004 Midwest regionals 4th place – Men’s Trick , 
@@ -101,7 +103,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className="max-w-2xl mx-auto mt-12 p-8 bg-white rounded shadow text-center">
+      <div id="contact-section" className="max-w-5xl mx-auto mt-12 mb-24 p-8 bg-white rounded shadow text-center">
         <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
         <p className="text-lg mb-4">
           If you have any questions or concerns, please don't hesitate to <a href="https://forms.gle/ZshAZ17CmV5p2P9X9" className="underline">contact us</a>.
@@ -110,6 +112,15 @@ export default function AboutUs() {
           Check us out on <a href="https://www.facebook.com/themcwsa/" className="underline">Facebook</a>.
         </p>
       </div>
+
+
+    <FooterNav
+      links={[
+        { label: "About Us", id: "about-section" },
+        { label: "Hall of Fame", id: "hof-section" },
+        { label: "Contact Us", id: "contact-section" },
+      ]}
+    />
     </>
   );
 }
