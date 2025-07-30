@@ -5,21 +5,21 @@ export default function AboutUs() {
     <>
       <div id="about-section" className="max-w-5xl mx-auto mt-24 p-8 bg-white rounded shadow text-center">
         <h1 className="text-3xl font-bold mb-4">About Us</h1>
-        <p className="text-lg mb-4">
+        <p className="text-lg leading-relaxed mb-4">
           The Midwest Collegiate Water Ski Association (MCWSA) is dedicated to promoting collegiate water skiing throughout the Midwest region. 
           Our mission is to support student-athletes, foster sportsmanship, and organize competitive events for teams and individuals of all skill levels.
         </p>
-        <p className="text-lg">
+        <p className="text-lg leading-relaxed">
           This website serves as a central hub for MCWSA members, providing access to resources, team information, event schedules, and important updates. 
         </p>
       </div>
 
       <div id="hof-section" className="max-w-5xl mx-auto mt-12 p-8 bg-white rounded shadow text-center">
         <h1 className="text-3xl font-bold mb-4">Hall of Fame</h1>
-        <p className="text-lg mb-4">
-          The MCWSA Hall of Fame recognizes skiers, leaders, and officials whose dedication and competitive achievements have gone above and beyond to positively impact the sport throughout the Midwest region. Inductees are chosen by the Hall of Fame selection committee and inductions will take place at Winter Conference.
+        <p className="text-lg leading-relaxed mb-4">
+          The MCWSA Hall of Fame recognizes skiers, leaders, and officials whose dedication and competitive achievements have gone above and beyond to positively impact the sport throughout the Midwest region. Inductees are chosen by the Hall of Fame selection committee and inductions will take place at Winter Conference. Nominations due by January 1st.
         </p>
-        <div className="text-center mx-auto max-w-xl mb-4">
+        <div className="text-center mx-auto max-w-5xl mb-4">
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSdQV841b9EurV-hL_HtrJ8A7k9QBADMKWhxjsmbdfsXtIEjAA/viewform"
             target="_blank"
@@ -28,9 +28,8 @@ export default function AboutUs() {
           >
             Nomination Form
           </a>
-          <p>Nominations due by January 1st</p>
         </div>
-        <div className="text-left mx-auto max-w-xl mb-4">
+        <div className="text-left mx-auto max-w-5xl mb-4">
           <h2 className="mb-2">Rules and Requirements for Nominations</h2>
           <ul className="list-disc list-inside mb-4 ml-6">
             <li>Any MCWSA affiliated USA Waterski AND WAKE SPORTS Member will be allowed to submit nominations to the Hall of Fame Committee.</li>
@@ -43,7 +42,7 @@ export default function AboutUs() {
             <li>Nomination approval requires a majority of the Hall of Fame Committee.</li>
           </ul>
         </div>
-        <div className="mt-8 p-6 bg-white rounded shadow text-center">
+        <div className="mt-8 p-6 bg-white rounded  text-center">
           <h2 className="text-2xl font-bold mb-2">Please welcome the 2023 Inaugural Hall of Fame Class!</h2>
           <p className="text-xl font-semibold mb-2">Congratulations to Christy Kingsmill</p>
           <img src="public/Chrisy Kingsmill.png" alt="Christy Kingsmill" className="w-1/2 mx-auto mb-4" />
@@ -57,13 +56,13 @@ export default function AboutUs() {
             Christy also pulled double duty for many years serving on the NCWSA board while also leading the MCWSA. Currently Christy is the President of the NCWSA.
           </p>
         </div>
-        <div className="mt-8 p-6 bg-white rounded shadow text-center">
+        <div className="mt-8 p-6 bg-white rounded  text-center">
           <h2 className="text-2xl font-bold mb-2">Please welcome the 2022 Inaugural Hall of Fame Class!</h2>
-          <p className="text-xl font-semibold mb-2">Congratulations to Jeff Surdej and Cris Kodiak!s</p>
-          <img src="public/JeffSurdejandCrisKodiak.jpg" alt="Jeff Surdej and Cris Kodiak" className="w-1/2 mx-auto mb-4" />
+          <p className="text-xl font-semibold mb-2">Congratulations to Jeff Surdej and Cris Kodiak!</p>
+          <img src={`${import.meta.env.BASE_URL}JeffSurdejandCrisKodiak.webp`} alt="Jeff Surdej and Cris Kodiak" className="w-1/2 mx-auto mb-4" />
           <p className="text-center italic mb-4">Jeff Surdej (left) and Cris Kodiak (right)</p>
           
-          <div className="text-left mx-auto max-w-xl mb-4">
+          <div className="text-left mx-auto max-w-5xl mb-4">
             <h2 className="text-center mb-2">Jeff Surdej</h2>
             <p className="text-left max-w-5xl mx-auto">
           Jeff Surdej skied for Purdue University from Fall 1994 through Spring 1998 and helped turn Purdue University into a powerhouse in the Midwest that created a decade or more of dominance in the region. 
@@ -79,7 +78,7 @@ export default function AboutUs() {
           The impact of Jeff Surdej on collegiate water skiing will be measured for many years to come, and he is an outstanding candidate for the Hall of Fame.
           </p>
           </div>
-          <div className="text-left mx-auto max-w-xl mb-4">
+          <div className="text-left mx-auto max-w-5xl mb-4">
             <h2 className="text-center mb-2">Cris Kodiak</h2>
             <p className="text-left max-w-5xl mx-auto">
             Cris Kodiak Skied for Purdue University from 2001-2004, and held many leadership positions in his time there, 
@@ -105,10 +104,10 @@ export default function AboutUs() {
 
       <div id="contact-section" className="max-w-5xl mx-auto mt-12 mb-24 p-8 bg-white rounded shadow text-center">
         <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
-        <p className="text-lg mb-4">
+        <p className="text-lg leading-relaxed mb-4">
           If you have any questions or concerns, please don't hesitate to <a href="https://forms.gle/ZshAZ17CmV5p2P9X9" className="underline">contact us</a>.
         </p>
-        <p className="text-lg mb-4">
+        <p className="text-lg leading-relaxed mb-4">
           Check us out on <a href="https://www.facebook.com/themcwsa/" className="underline">Facebook</a>.
         </p>
       </div>
