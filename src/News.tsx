@@ -1,4 +1,4 @@
-import { FiExternalLink } from "react-icons/fi";
+
 
 interface NewsProps {
   headline: string;
@@ -33,7 +33,6 @@ export default function News({
           />
           <span className="flex items-center gap-2 text-pink-700 font-semibold text-base md:text-lg mt-1 group-hover:underline">
             {linkTitle}
-            <FiExternalLink className="inline-block text-pink-700 text-xl align-middle" />
           </span>
         </div>
       </a>

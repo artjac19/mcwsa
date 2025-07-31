@@ -3,7 +3,7 @@ import FooterNav from "./FooterNav";
 export default function AboutUs() {
   return (
     <>
-      <div id="about-section" className="max-w-5xl mx-auto mt-24 p-8 bg-white rounded shadow text-center">
+<div id="about-section" className="max-w-5xl mx-auto mt-24 p-8 bg-white rounded shadow text-center">
         <h1 className="text-3xl font-bold mb-4">About Us</h1>
         <p className="text-lg leading-relaxed mb-4">
           The Midwest Collegiate Water Ski Association (MCWSA) is dedicated to promoting collegiate water skiing throughout the Midwest region. 
@@ -12,6 +12,117 @@ export default function AboutUs() {
         <p className="text-lg leading-relaxed">
           This website serves as a central hub for MCWSA members, providing access to resources, team information, event schedules, and important updates. 
         </p>
+      </div>
+
+      {/* Exec Board Section */}
+      <div id="exec-board-section" className="max-w-5xl mx-auto mt-12 p-8 bg-white rounded shadow text-center">
+        <h1 className="text-3xl font-bold mb-4">Exec Board</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Jake Artang */}
+          <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
+            <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
+            <h2 className="text-xl font-semibold">Jake Artang <span className="text-gray-500">(Tango)</span></h2>
+            <div className="text-sm text-gray-600 mb-2">Board Position: Great Plains Webmaster</div>
+            <div className="text-sm text-gray-600 mb-2">School: UW-Madison</div>
+            <div className="text-sm text-gray-600 mb-2">Hometown: Prior Lake, MN</div>
+            <div className="text-sm text-gray-600 mb-2">Fav Event: Trick</div>
+            <div className="text-sm text-gray-600 mb-2">PBs: 1 @ 35, 1670 pts, 85ft</div>
+            <div className="text-sm text-gray-600 mb-2">Favorite non-tournament event: Spring break</div>
+            <div className="text-sm text-gray-600 mb-2">Hobbies: Kendama, jazz piano, snow skiing, filming/editing</div>
+            <div className="text-sm text-gray-600">Favorite quote: "Don't jinx him Tony"</div>
+          </div>
+          {/* Sean Freitag */}
+          <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
+            <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
+            <h2 className="text-xl font-semibold">Sean Freitag</h2>
+            <div className="text-sm text-gray-600 mb-2">Board Position: Secretary</div>
+            <div className="text-sm text-gray-600 mb-2">School: ISU</div>
+            <div className="text-sm text-gray-600 mb-2">Hometown: Milwaukee</div>
+            <div className="text-sm text-gray-600 mb-2">Fav Event: Jump</div>
+            <div className="text-sm text-gray-600 mb-2">PBs: 2.6@ 39mph 26off, 132ft, 1040pts</div>
+            <div className="text-sm text-gray-600 mb-2">Favorite non-tournament event: Winter Conference</div>
+            <div className="text-sm text-gray-600 mb-2">Hobbies: Cliff jumping and hiking</div>
+            <div className="text-sm text-gray-600">Favorite quote: "Don't disappoint me"</div>
+          </div>
+          {/* Amanda Rose */}
+          <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
+            <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
+            <h2 className="text-xl font-semibold">Amanda Rose <span className="text-gray-500"></span></h2>
+            <div className="text-sm text-gray-600 mb-2">Board Position: Chair</div>
+            <div className="text-sm text-gray-600 mb-2">School: Iowa state & KU</div>
+            <div className="text-sm text-gray-600 mb-2">Hometown: Lake Saint Louis, MO</div>
+            <div className="text-sm text-gray-600 mb-2">Fav Event: Trick</div>
+            <div className="text-sm text-gray-600 mb-2">PBs: 2@35 off, Jump: 74ft, Trick 1930pts</div>
+            <div className="text-sm text-gray-600 mb-2">Favorite non-tournament event: Quaff & hanging out with ski friends</div>
+            <div className="text-sm text-gray-600 mb-2">Hobbies: Snow skiing, running, being outside</div>
+            <div className="text-sm text-gray-600">Favorite quote: "Pull hard suck less"</div>
+          </div>
+          {/* Nikki Weber */}
+          <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
+            <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
+            <h2 className="text-xl font-semibold">Nikki Weber</h2>
+            <div className="text-sm text-gray-600 mb-2">Board Position: Vice Chair</div>
+            <div className="text-sm text-gray-600 mb-2">School: Missouri State</div>
+            <div className="text-sm text-gray-600 mb-2">Hometown: Lake Lotawana MO</div>
+            <div className="text-sm text-gray-600 mb-2">Fav Event: Jump</div>
+            <div className="text-sm text-gray-600 mb-2">PBs: 5@28off 34mph, Trick: 1980, Jump 102 </div>
+            <div className="text-sm text-gray-600 mb-2">Favorite non-tournament event: Winter Conference</div>
+            <div className="text-sm text-gray-600 mb-2">Hobbies: Skiing (water and snow), sailing, hiking, camping</div>
+            <div className="text-sm text-gray-600">Favorite quote:</div>
+          </div>
+          {/* Jacob Devereaux */}
+          <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
+            <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
+            <h2 className="text-xl font-semibold">Jacob Devereaux <span className="text-gray-500">(Jdev)</span></h2>
+            <div className="text-sm text-gray-600 mb-2">Board Position: Great Lakes Web Master</div>
+            <div className="text-sm text-gray-600 mb-2">School: Miami University</div>
+            <div className="text-sm text-gray-600 mb-2">Hometown: Elizabeth, CO</div>
+            <div className="text-sm text-gray-600 mb-2">Fav Event: Slalom</div>
+            <div className="text-sm text-gray-600 mb-2">PBs: 32 beers, 14 shots, 3 mojitos</div>
+            <div className="text-sm text-gray-600 mb-2">Favorite non-tournament event: Spring break</div>
+            <div className="text-sm text-gray-600 mb-2">Hobbies: Guitar, TV</div>
+            <div className="text-sm text-gray-600">Favorite quote: "Big medical tryna stop me"</div>
+          </div>
+          {/* Lauren Connelly */}
+          <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
+            <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
+            <h2 className="text-xl font-semibold">Lauren Connelly</h2>
+            <div className="text-sm text-gray-600 mb-2">Board Position: Great Plains Conference Chair</div>
+            <div className="text-sm text-gray-600 mb-2">School: Iowa State University</div>
+            <div className="text-sm text-gray-600 mb-2">Hometown: Lockport, IL</div>
+            <div className="text-sm text-gray-600 mb-2">Fav Event: Slalom</div>
+            <div className="text-sm text-gray-600 mb-2">PBs: 2/5 @ 34mph, Jump: 15ft, Trick: WIP</div>
+            <div className="text-sm text-gray-600 mb-2">Favorite non-tournament event: Quaff, snow ski trip out west</div>
+            <div className="text-sm text-gray-600 mb-2">Hobbies: Painting myself head-to-toe in school colors, skiing for the west coast, skipping my engineering classes</div>
+            <div className="text-sm text-gray-600">Favorite quote: "Zero off & boat guides are more of suggestions than requirements"</div>
+          </div>
+          {/* Jack Strachan */}
+          <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
+            <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
+            <h2 className="text-xl font-semibold">Jack Strachan</h2>
+            <div className="text-sm text-gray-600 mb-2">Board Position: AAC Rep</div>
+            <div className="text-sm text-gray-600 mb-2">School: Marquette</div>
+            <div className="text-sm text-gray-600 mb-2">Hometown: Slinger</div>
+            <div className="text-sm text-gray-600 mb-2">Fav Event: Trick (if I stand up my run)</div>
+            <div className="text-sm text-gray-600 mb-2">PBs: Trick: 1760, Jump: 114ft, Slalom: 5.5@30mph 22off</div>
+            <div className="text-sm text-gray-600 mb-2">Favorite non-tournament event: Spring break</div>
+            <div className="text-sm text-gray-600 mb-2">Hobbies: snowmobiling, legos</div>
+            <div className="text-sm text-gray-600">Favorite quote: "Fuck slalom"</div>
+          </div>
+          {/* Rachel Bell */}
+          <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
+            <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
+            <h2 className="text-xl font-semibold">Rachel Bell</h2>
+            <div className="text-sm text-gray-600 mb-2">Board Position: Great Lakes chair</div>
+            <div className="text-sm text-gray-600 mb-2">School: Miami</div>
+            <div className="text-sm text-gray-600 mb-2">Hometown: Plainfield, IL</div>
+            <div className="text-sm text-gray-600 mb-2">Fav Event: Slalom</div>
+            <div className="text-sm text-gray-600 mb-2">PBs: 2@32mph 15off, Jump: 56ft, Trick: 221</div>
+            <div className="text-sm text-gray-600 mb-2">Favorite non-tournament event: Ski giving</div>
+            <div className="text-sm text-gray-600 mb-2">Hobbies: Snow skiing and waterskiing</div>
+            <div className="text-sm text-gray-600">Favorite quote: "House Ristin!"</div>
+          </div>
+        </div>
       </div>
 
       <div id="hof-section" className="max-w-5xl mx-auto mt-12 p-8 bg-white rounded shadow text-center">
