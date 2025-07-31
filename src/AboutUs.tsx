@@ -78,7 +78,7 @@ export default function AboutUs() {
             <div className="text-sm text-gray-600 mb-2">School: Miami University</div>
             <div className="text-sm text-gray-600 mb-2">Hometown: Elizabeth, CO</div>
             <div className="text-sm text-gray-600 mb-2">Fav Event: Slalom</div>
-            <div className="text-sm text-gray-600 mb-2">PBs: 12packa beers, 14 shots, 3 mojitos</div>
+            <div className="text-sm text-gray-600 mb-2">PBs: No clue, here for vibes</div>
             <div className="text-sm text-gray-600 mb-2">Favorite non-tournament event: Spring break</div>
             <div className="text-sm text-gray-600 mb-2">Hobbies: Guitar, TV</div>
             <div className="text-sm text-gray-600">Favorite quote: "Big medical tryna stop me"</div>
