@@ -120,7 +120,7 @@ export default function AboutUs() {
             <div className="text-sm text-gray-600 mb-2">PBs: 2@32mph 15off, Jump: 56ft, Trick: 221</div>
             <div className="text-sm text-gray-600 mb-2">Favorite non-tournament event: Ski giving</div>
             <div className="text-sm text-gray-600 mb-2">Hobbies: Snow skiing and waterskiing</div>
-            <div className="text-sm text-gray-600">Favorite quote: "House Ristin!"</div>
+            <div className="text-sm text-gray-600">Favorite quote: </div>
           </div>
         </div>
       </div>
