@@ -182,7 +182,7 @@ function Home() {
               </thead>
               <tbody>
                 <tr>
-                  <td className="tournament-date">Sep 27-28</td>
+                  <td className="tournament-date">Sep 26-28</td>
                   <td className="tournament-name">2025 Collegiate Regionals</td>
                   <td>PITS - Decatur, IL</td>
                 </tr>

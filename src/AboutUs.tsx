@@ -18,35 +18,13 @@ export default function AboutUs() {
       <div id="exec-board-section" className="max-w-5xl mx-auto mt-12 p-8 bg-white rounded shadow text-center">
         <h1 className="text-3xl font-bold mb-4">Exec Board</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Jake Artang */}
-          <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
-            <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
-            <h2 className="text-xl font-semibold">Jake Artang <span className="text-gray-500">(Tango)</span></h2>
-            <div className="text-sm text-gray-600 mb-2">Board Position: Great Plains Webmaster</div>
-            <div className="text-sm text-gray-600 mb-2">School: UW-Madison</div>
-            <div className="text-sm text-gray-600 mb-2">Hometown: Prior Lake, MN</div>
-            <div className="text-sm text-gray-600 mb-2">Fav Event: Trick</div>
-            <div className="text-sm text-gray-600 mb-2">PBs: 1 @ 35, 1670 pts, 85ft</div>
-            <div className="text-sm text-gray-600 mb-2">Favorite non-tournament event: Spring break</div>
-            <div className="text-sm text-gray-600 mb-2">Hobbies: Kendama, jazz piano, snow skiing, filming/editing</div>
-            <div className="text-sm text-gray-600">Favorite quote: "Don't jinx him Tony"</div>
-          </div>
-          {/* Sean Freitag */}
-          <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
-            <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
-            <h2 className="text-xl font-semibold">Sean Freitag</h2>
-            <div className="text-sm text-gray-600 mb-2">Board Position: Secretary</div>
-            <div className="text-sm text-gray-600 mb-2">School: ISU</div>
-            <div className="text-sm text-gray-600 mb-2">Hometown: Milwaukee</div>
-            <div className="text-sm text-gray-600 mb-2">Fav Event: Jump</div>
-            <div className="text-sm text-gray-600 mb-2">PBs: 2.6@ 39mph 26off, 132ft, 1040pts</div>
-            <div className="text-sm text-gray-600 mb-2">Favorite non-tournament event: Winter Conference</div>
-            <div className="text-sm text-gray-600 mb-2">Hobbies: Cliff jumping and hiking</div>
-            <div className="text-sm text-gray-600">Favorite quote: "Don't disappoint me"</div>
-          </div>
           {/* Amanda Rose */}
           <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
-            <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
+            <img
+              src="../public/AmandaR.JPG"
+              alt="Amanda Rose"
+              className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
+            />
             <h2 className="text-xl font-semibold">Amanda Rose <span className="text-gray-500"></span></h2>
             <div className="text-sm text-gray-600 mb-2">Board Position: Chair</div>
             <div className="text-sm text-gray-600 mb-2">School: Iowa state & KU</div>
@@ -57,6 +35,7 @@ export default function AboutUs() {
             <div className="text-sm text-gray-600 mb-2">Hobbies: Snow skiing, running, being outside</div>
             <div className="text-sm text-gray-600">Favorite quote: "Pull hard suck less"</div>
           </div>
+
           {/* Nikki Weber */}
           <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
             <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
@@ -70,9 +49,64 @@ export default function AboutUs() {
             <div className="text-sm text-gray-600 mb-2">Hobbies: Skiing (water and snow), sailing, hiking, camping</div>
             <div className="text-sm text-gray-600">Favorite quote:</div>
           </div>
-          {/* Jacob Devereaux */}
+
+          {/* Braylen Lynch */}
           <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
             <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
+            <h2 className="text-xl font-semibold">Braylen Lynch</h2>
+            <div className="text-sm text-gray-600 mb-2">Board Position: Athlete Advisor Council</div>
+            <div className="text-sm text-gray-600 mb-2">School: Miami University</div>
+            <div className="text-sm text-gray-600 mb-2">Hometown: Novi, MI</div>
+            <div className="text-sm text-gray-600 mb-2">Fav Event: Jump</div>
+            <div className="text-sm text-gray-600 mb-2">PBs: 3.5@36 22, Jump: 104ft, Trick: 1330pts</div>
+            <div className="text-sm text-gray-600 mb-2">Favorite non-tournament event: Waterski Wednsdays</div>
+            <div className="text-sm text-gray-600 mb-2">Hobbies: Snow skiing and hiking</div>
+            <div className="text-sm text-gray-600">Favorite quote: </div>
+          </div>
+
+          {/* Jake Artang */}
+          <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
+            <img
+              src="../public/JakeA.JPG"
+              alt="Jake Artang"
+              className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
+            />
+            <h2 className="text-xl font-semibold">Jake Artang <span className="text-gray-500">(Tango)</span></h2>
+            <div className="text-sm text-gray-600 mb-2">Board Position: Great Plains Webmaster</div>
+            <div className="text-sm text-gray-600 mb-2">School: UW-Madison</div>
+            <div className="text-sm text-gray-600 mb-2">Hometown: Prior Lake, MN</div>
+            <div className="text-sm text-gray-600 mb-2">Fav Event: Trick</div>
+            <div className="text-sm text-gray-600 mb-2">PBs: 1 @ 35, 1670 pts, 85ft</div>
+            <div className="text-sm text-gray-600 mb-2">Favorite non-tournament event: Spring break</div>
+            <div className="text-sm text-gray-600 mb-2">Hobbies: Kendama, jazz piano, snow skiing, filming/editing</div>
+            <div className="text-sm text-gray-600">Favorite quote: "Don't jinx him Tony"</div>
+          </div>
+          {/* Sean Freitag */}
+          <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
+            <img
+              src="../public/SeanF.JPG"
+              alt="Sean Freitag"
+              className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
+            />
+            <h2 className="text-xl font-semibold">Sean Freitag</h2>
+            <div className="text-sm text-gray-600 mb-2">Board Position: Secretary</div>
+            <div className="text-sm text-gray-600 mb-2">School: ISU</div>
+            <div className="text-sm text-gray-600 mb-2">Hometown: Milwaukee</div>
+            <div className="text-sm text-gray-600 mb-2">Fav Event: Jump</div>
+            <div className="text-sm text-gray-600 mb-2">PBs: 2.6@ 39mph 26off, 132ft, 1040pts</div>
+            <div className="text-sm text-gray-600 mb-2">Favorite non-tournament event: Winter Conference</div>
+            <div className="text-sm text-gray-600 mb-2">Hobbies: Cliff jumping and hiking</div>
+            <div className="text-sm text-gray-600">Favorite quote: "Don't disappoint me"</div>
+          </div>
+
+
+          {/* Jacob Devereaux */}
+          <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
+            <img
+              src="../public/JacobD.JPG"
+              alt="Jacob Devereaux"
+              className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
+            />
             <h2 className="text-xl font-semibold">Jacob Devereaux <span className="text-gray-500">(Jdev)</span></h2>
             <div className="text-sm text-gray-600 mb-2">Board Position: Great Lakes Web Master</div>
             <div className="text-sm text-gray-600 mb-2">School: Miami University</div>
@@ -85,7 +119,11 @@ export default function AboutUs() {
           </div>
           {/* Lauren Connelly */}
           <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
-            <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
+            <img
+              src="../public/LaurenC.JPG"
+              alt="Lauren Connelly"
+              className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
+            />
             <h2 className="text-xl font-semibold">Lauren Connelly</h2>
             <div className="text-sm text-gray-600 mb-2">Board Position: Great Plains Conference Chair</div>
             <div className="text-sm text-gray-600 mb-2">School: Iowa State University</div>
@@ -98,7 +136,11 @@ export default function AboutUs() {
           </div>
           {/* Jack Strachan */}
           <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
-            <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
+            <img
+              src="../public/JackS.JPG"
+              alt="Jack Strachan"
+              className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
+            />
             <h2 className="text-xl font-semibold">Jack Strachan</h2>
             <div className="text-sm text-gray-600 mb-2">Board Position: AAC Rep</div>
             <div className="text-sm text-gray-600 mb-2">School: Marquette</div>
@@ -111,10 +153,14 @@ export default function AboutUs() {
           </div>
           {/* Rachel Bell */}
           <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
-            <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
+          <img
+              src="../public/RachelB.JPG"
+              alt="Rachel Bell"
+              className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
+            />
             <h2 className="text-xl font-semibold">Rachel Bell</h2>
             <div className="text-sm text-gray-600 mb-2">Board Position: Great Lakes chair</div>
-            <div className="text-sm text-gray-600 mb-2">School: Miami</div>
+            <div className="text-sm text-gray-600 mb-2">School: Miami University</div>
             <div className="text-sm text-gray-600 mb-2">Hometown: Plainfield, IL</div>
             <div className="text-sm text-gray-600 mb-2">Fav Event: Slalom</div>
             <div className="text-sm text-gray-600 mb-2">PBs: 2@32mph 15off, Jump: 56ft, Trick: 221</div>
@@ -156,7 +202,7 @@ export default function AboutUs() {
         <div className="mt-8 p-6 bg-white rounded  text-center">
           <h2 className="text-2xl font-bold mb-2">Please welcome the 2023 Inaugural Hall of Fame Class!</h2>
           <p className="text-xl font-semibold mb-2">Congratulations to Christy Kingsmill</p>
-          <img src="public/Chrisy Kingsmill.png" alt="Christy Kingsmill" className="w-1/2 mx-auto mb-4" />
+          <img src="../public/Chrisy Kingsmill.png" alt="Christy Kingsmill" className="w-1/2 mx-auto mb-4" />
           <p className="text-left max-w-5xl mx-auto">
             Christy Kingsmill has over 15 years of service between the MCWSA and NCWSA during which she influenced many positive 
             changes that helped grow the sport of collegiate water skiing for thousands of people. 
