@@ -52,7 +52,11 @@ export default function AboutUs() {
 
           {/* Braylen Lynch */}
           <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
-            <div className="w-24 h-24 bg-gray-200 rounded-full mb-4 flex items-center justify-center text-gray-400">Photo</div>
+            <img
+              src="../public/BraylenL.JPG"
+              alt="Braylen Lynch"
+              className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
+            />
             <h2 className="text-xl font-semibold">Braylen Lynch</h2>
             <div className="text-sm text-gray-600 mb-2">Board Position: Athlete Advisor Council</div>
             <div className="text-sm text-gray-600 mb-2">School: Miami University</div>
@@ -202,7 +206,7 @@ export default function AboutUs() {
         <div className="mt-8 p-6 bg-white rounded  text-center">
           <h2 className="text-2xl font-bold mb-2">Please welcome the 2023 Inaugural Hall of Fame Class!</h2>
           <p className="text-xl font-semibold mb-2">Congratulations to Christy Kingsmill</p>
-          <img src="../public/Chrisy Kingsmill.png" alt="Christy Kingsmill" className="w-1/2 mx-auto mb-4" />
+          <img src="../public/Chrisy Kingsmill.webp" alt="Christy Kingsmill" className="w-1/2 mx-auto mb-4" />
           <p className="text-left max-w-5xl mx-auto">
             Christy Kingsmill has over 15 years of service between the MCWSA and NCWSA during which she influenced many positive 
             changes that helped grow the sport of collegiate water skiing for thousands of people. 
