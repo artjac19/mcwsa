@@ -16,12 +16,12 @@ export default function AboutUs() {
 
       {/* Exec Board Section */}
       <div id="exec-board-section" className="max-w-5xl mx-auto mt-12 p-8 bg-white rounded shadow text-center">
-        <h1 className="text-3xl font-bold mb-4">Exec Board</h1>
+        <h1 className="text-3xl font-bold mb-4">MCWSA Board</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Amanda Rose */}
           <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
             <img
-              src="../public/AmandaR.JPG"
+              src="../AmandaR.JPG"
               alt="Amanda Rose"
               className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
             />
@@ -53,7 +53,7 @@ export default function AboutUs() {
           {/* Braylen Lynch */}
           <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
             <img
-              src="../public/BraylenL.JPG"
+              src="../BraylenL.jpg"
               alt="Braylen Lynch"
               className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
             />
@@ -71,7 +71,7 @@ export default function AboutUs() {
           {/* Jake Artang */}
           <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
             <img
-              src="../public/JakeA.JPG"
+              src="../JakeA.jpg"
               alt="Jake Artang"
               className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
             />
@@ -88,7 +88,7 @@ export default function AboutUs() {
           {/* Sean Freitag */}
           <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
             <img
-              src="../public/SeanF.JPG"
+              src="../SeanF.jpg"
               alt="Sean Freitag"
               className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
             />
@@ -107,7 +107,7 @@ export default function AboutUs() {
           {/* Jacob Devereaux */}
           <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
             <img
-              src="../public/JacobD.JPG"
+              src="../JacobD.jpg"
               alt="Jacob Devereaux"
               className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
             />
@@ -124,7 +124,7 @@ export default function AboutUs() {
           {/* Lauren Connelly */}
           <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
             <img
-              src="../public/LaurenC.JPG"
+              src="../LaurenC.jpg"
               alt="Lauren Connelly"
               className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
             />
@@ -141,7 +141,7 @@ export default function AboutUs() {
           {/* Jack Strachan */}
           <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
             <img
-              src="../public/JackS.JPG"
+              src="../JackS.jpg"
               alt="Jack Strachan"
               className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
             />
@@ -158,7 +158,7 @@ export default function AboutUs() {
           {/* Rachel Bell */}
           <div className="bg-gray-50 rounded shadow p-6 flex flex-col items-center">
           <img
-              src="../public/RachelB.JPG"
+              src="../RachelB.JPG"
               alt="Rachel Bell"
               className="w-24 h-24 rounded-full mb-4 object-cover border-2 border-gray-300 shadow"
             />
@@ -206,7 +206,7 @@ export default function AboutUs() {
         <div className="mt-8 p-6 bg-white rounded  text-center">
           <h2 className="text-2xl font-bold mb-2">Please welcome the 2023 Inaugural Hall of Fame Class!</h2>
           <p className="text-xl font-semibold mb-2">Congratulations to Christy Kingsmill</p>
-          <img src="../public/Chrisy Kingsmill.webp" alt="Christy Kingsmill" className="w-1/2 mx-auto mb-4" />
+          <img src="../Chrisy Kingsmill.webp" alt="Christy Kingsmill" className="w-1/2 mx-auto mb-4" />
           <p className="text-left max-w-5xl mx-auto">
             Christy Kingsmill has over 15 years of service between the MCWSA and NCWSA during which she influenced many positive 
             changes that helped grow the sport of collegiate water skiing for thousands of people. 

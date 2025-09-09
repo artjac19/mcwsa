@@ -33,7 +33,47 @@ export default function Resources() {
         />
         <div className="max-w-none mx-auto text-gray-800 bg-white bg-opacity-90 rounded p-4 text-lg leading-relaxed">
   If you’re considering becoming an official the first thing you need to figure out is what kind of official you want to be. Since we are in the MCWSA, you’re most likely looking at becoming an assistant judge, scorer, driver or safety official. This guide will hopefully help to explain the positions as well as how to get involved in them.<br /><br />
-
+ <h3 className="text-xl font-bold mt-6 mb-2">Acheiving and maintaining Assistant Ratings</h3>
+  <ul>
+    <li>You need to work four tournaments every two years in order to maintain your rating.</li>
+    <li>For more information, read: <a href="https://www.usawaterski.org/ncwsa/become-a-judge">USA Waterski’s Writeup on Becoming a Judge</a></li>
+    <li>To see exactly what needs to be done to earn each rating, start by downloading the Official’s Applications below:</li>
+  </ul>
+  <br />
+  <div className="mt-0 mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <a
+      href="/AWSAAssistantJudgeApp.pdf"
+      target="_blank" rel="noopener noreferrer"
+      className="flex items-center justify-center h-24 rounded-lg bg-[#ED1472] shadow hover:bg-pink-700 transition-colors font-bold text-white text-center text-lg px-4"
+      style={{ textDecoration: 'none' }}
+    >
+      AWSA Assistant Judge Application
+    </a>
+    <a
+      href="/AWSAAssistantScorerApp.pdf"
+      target="_blank" rel="noopener noreferrer"
+      className="flex items-center justify-center h-24 rounded-lg bg-[#ED1472] shadow hover:bg-pink-700 transition-colors font-bold text-white text-center text-lg px-4"
+      style={{ textDecoration: 'none' }}
+    >
+      AWSA Assistant Scorer Application
+    </a>
+    <a
+      href="/AWSAAssistantDriverApp.pdf"
+      target="_blank" rel="noopener noreferrer"
+      className="flex items-center justify-center h-24 rounded-lg bg-[#ED1472] shadow hover:bg-pink-700 transition-colors font-bold text-white text-center text-lg px-4"
+      style={{ textDecoration: 'none' }}
+    >
+      AWSA Assistant Driver Application
+    </a>
+    <a
+      href="/MCWSA-Bylaws-3.14.21-CURRENT.docx.pdf"
+      target="_blank" rel="noopener noreferrer"
+      className="flex items-center justify-center h-24 rounded-lg bg-[#ED1472] shadow hover:bg-pink-700 transition-colors font-bold text-white text-center text-lg px-4"
+      style={{ textDecoration: 'none' }}
+    >
+      MCWSA Bylaws
+    </a>
+  </div>
   <h3 className="text-xl font-bold mt-6 mb-2">Assistant Judge</h3>
   <ul>
     <li>You can become an assistant judge in one or all of the three events in collegiate water skiing. Below is a breakdown of what judging each event looks like.</li>
@@ -101,47 +141,6 @@ export default function Resources() {
     <li>Only collegiate tournaments will be counted for points, though we encourage you to stay involved and help at summer tournaments as well!</li>
   </ul>
   <br />
-  <h3 className="text-xl font-bold mt-6 mb-2">Maintaining Assistant Ratings</h3>
-  <ul>
-    <li>You need to work four tournaments every two years in order to maintain your rating.</li>
-    <li>For more information, read: <a href="https://www.usawaterski.org/ncwsa/become-a-judge">USA Waterski’s Writeup on Becoming a Judge</a></li>
-    <li>To see exactly what needs to be done to earn each rating, start by downloading the Official’s Applications below:</li>
-  </ul>
-  <br />
-  <div className="mt-0 mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    <a
-      href="/mcwsa/AWSAAssistantJudgeApp.pdf"
-      target="_blank" rel="noopener noreferrer"
-      className="flex items-center justify-center h-24 rounded-lg bg-[#ED1472] shadow hover:bg-pink-700 transition-colors font-bold text-white text-center text-lg px-4"
-      style={{ textDecoration: 'none' }}
-    >
-      AWSA Assistant Judge Application
-    </a>
-    <a
-      href="/mcwsa/AWSAAssistantScorerApp.pdf"
-      target="_blank" rel="noopener noreferrer"
-      className="flex items-center justify-center h-24 rounded-lg bg-[#ED1472] shadow hover:bg-pink-700 transition-colors font-bold text-white text-center text-lg px-4"
-      style={{ textDecoration: 'none' }}
-    >
-      AWSA Assistant Scorer Application
-    </a>
-    <a
-      href="/mcwsa/AWSAAssistantDriverApp.pdf"
-      target="_blank" rel="noopener noreferrer"
-      className="flex items-center justify-center h-24 rounded-lg bg-[#ED1472] shadow hover:bg-pink-700 transition-colors font-bold text-white text-center text-lg px-4"
-      style={{ textDecoration: 'none' }}
-    >
-      AWSA Assistant Driver Application
-    </a>
-    <a
-      href="/mcwsa/MCWSA-Bylaws-3.14.21-CURRENT.docx.pdf"
-      target="_blank" rel="noopener noreferrer"
-      className="flex items-center justify-center h-24 rounded-lg bg-[#ED1472] shadow hover:bg-pink-700 transition-colors font-bold text-white text-center text-lg px-4"
-      style={{ textDecoration: 'none' }}
-    >
-      MCWSA Bylaws
-    </a>
-  </div>
 </div>
 </section>
 <div id="records" className="mb-20"/>
