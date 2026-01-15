@@ -68,7 +68,12 @@ function Home() {
         }}
       >
         <div id="news" className="mb-8"></div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">2026 Ski-Ammy Nominations</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center">2026 Ski-Ammy Nominations</h2>
+          <div className="bg-pink-50 border border-pink-200 rounded-xl px-6 py-4 max-w-2xl mx-auto mb-8 shadow-sm">
+            <p className="text-center text-gray-700 m-0">
+              Nominate a collegiate water skier who you believe best exemplifies the spirit of these awards. Please include the skier's name, school, and a short paragraph explaining why you think they deserve to be recognized.
+            </p>
+          </div>
           <div className="max-w-6xl mx-auto mb-12 px-4">
             <div className="border border-gray-200 rounded-lg overflow-hidden bg-gray-100 shadow">
               <iframe
