@@ -68,6 +68,23 @@ function Home() {
         }}
       >
         <div id="news" className="mb-8"></div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">2026 Ski-Ammy Nominations</h2>
+          <div className="max-w-6xl mx-auto mb-12 px-4">
+            <div className="border border-gray-200 rounded-lg overflow-hidden bg-gray-100 shadow">
+              <iframe
+                src="https://padlet.com/embed/6c9sx1lx3un9xsph"
+                frameBorder="0"
+                allow="camera;microphone;geolocation;display-capture;clipboard-write"
+                className="w-full h-[608px] block"
+              />
+              <div className="flex items-center justify-end p-2 text-xs text-gray-500">
+                <a href="https://padlet.com?ref=embed" className="flex items-center gap-1 no-underline" target="_blank" rel="noopener noreferrer">
+                  <span>Made with</span>
+                  <img src="https://padlet.net/emails/padlet_email_logo_2026_text-dark-200.png" className="h-3" alt="Padlet" />
+                </a>
+              </div>
+            </div>
+          </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">News</h2>
           <News 
             headline="Academic All-Star Team"
