@@ -68,27 +68,21 @@ function Home() {
         }}
       >
         <div id="news" className="mb-8"></div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center">2026 Ski-Ammy Nominations</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center">2026 Ski Ammys</h2>
           <div className="bg-pink-50 border border-pink-200 rounded-xl px-6 py-4 max-w-2xl mx-auto mb-8 shadow-sm">
             <p className="text-center text-gray-700 m-0">
-              Nominate a collegiate water skier who you believe best exemplifies the spirit of these awards. Please include the skier's name, school, and a short paragraph explaining why you think they deserve to be recognized. Nominations close Sunday, Feb 1st at midnight.
+              Voting is now open! Thanks for the wonderful nominations, please vote using the google form below, be sure to check out the <a href="https://docs.google.com/document/d/10Fsl9bULOrNhCtXwY-tV9IkbhY0bwaoUUNeGanwtUG0/edit?tab=t.0" target="_blank" className="text-blue-500 underline">athlete descriptions document</a> to see what skiers from other teams have been up to!
             </p>
           </div>
-          <div className="max-w-6xl mx-auto mb-12 px-4">
-            <div className="border border-gray-200 rounded-lg overflow-hidden bg-gray-100 shadow">
-              <iframe
-                src="https://padlet.com/embed/6c9sx1lx3un9xsph"
-                frameBorder="0"
-                allow="camera;microphone;geolocation;display-capture;clipboard-write"
-                className="w-full h-[608px] block"
-              />
-              <div className="flex items-center justify-end p-2 text-xs text-gray-500">
-                <a href="https://padlet.com?ref=embed" className="flex items-center gap-1 no-underline" target="_blank" rel="noopener noreferrer">
-                  <span>Made with</span>
-                  <img src="https://padlet.net/emails/padlet_email_logo_2026_text-dark-200.png" className="h-3" alt="Padlet" />
-                </a>
-              </div>
-            </div>
+          <div className="flex justify-center mb-10">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfBNlhSJNyngJtWsnGlrQSFIurDtrlP4mVvC1b_0IXr-_ZyjA/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#ED1472] hover:bg-pink-700 text-white font-bold rounded shadow px-6 py-3 transition-colors text-lg"
+          >
+            Vote here for Ski Ammys!
+          </a>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">News</h2>
           <News 
