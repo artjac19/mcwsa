@@ -71,7 +71,7 @@ function Home() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center">2026 Ski Ammys</h2>
           <div className="bg-pink-50 border border-pink-200 rounded-xl px-6 py-4 max-w-2xl mx-auto mb-8 shadow-sm">
             <p className="text-center text-gray-700 m-0">
-              Voting is now open! Thanks for the wonderful nominations, please vote using the google form below, be sure to check out the <a href="https://docs.google.com/document/d/10Fsl9bULOrNhCtXwY-tV9IkbhY0bwaoUUNeGanwtUG0/edit?tab=t.0" target="_blank" className="text-blue-500 underline">athlete descriptions document</a> to see what skiers from other teams have been up to!
+              Thanks for the wonderful nominations! Each team gets one vote, have your team captain fill out the form below, be sure to check out the <a href="https://docs.google.com/document/d/10Fsl9bULOrNhCtXwY-tV9IkbhY0bwaoUUNeGanwtUG0/edit?tab=t.0" target="_blank" className="text-blue-500 underline">athlete descriptions document</a> to see what skiers from other teams have been up to!
             </p>
           </div>
           <div className="flex justify-center mb-10">
