@@ -1,0 +1,554 @@
+import FooterNav from "./FooterNav";
+
+// Swap these URLs to https://gpcwsa.org / https://glcwsa.org once the domains are live.
+const SITES = {
+  greatPlains: {
+    name: "GPCWSA",
+    full: "Great Plains Collegiate Water Ski Association",
+    url: "https://artjac19.github.io/gpcwsa/",
+  },
+  greatLakes: {
+    name: "GLCWSA",
+    full: "Great Lakes Collegiate Water Ski Association",
+    url: "https://artjac19.github.io/glcwsa/",
+  },
+};
+
+export default function Legacy() {
+  return (
+    <>
+      {/* Split announcement */}
+      <div id="split-section" className="max-w-5xl mx-auto mt-24 p-8 bg-white rounded shadow text-center">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">The MCWSA Has Split!</h1>
+        <p className="text-lg leading-relaxed mb-4">
+          The Midwest Collegiate Water Ski Association has split into two conferences: the{" "}
+          <strong>{SITES.greatPlains.full} ({SITES.greatPlains.name})</strong> and the{" "}
+          <strong>{SITES.greatLakes.full} ({SITES.greatLakes.name})</strong>. Each conference now has
+          its own website with team info, resources, schedules, and news.
+        </p>
+        <p className="text-lg leading-relaxed mb-8">
+          This site remains as the home of Team Midwest history — the regional records and the
+          MCWSA Hall of Fame live on below.
+        </p>
+        <div className="flex flex-col sm:flex-row justify-center gap-6">
+          <a
+            href={SITES.greatPlains.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#ED1472] hover:bg-pink-700 text-white font-bold rounded-xl shadow px-8 py-5 transition-colors text-xl"
+          >
+            {SITES.greatPlains.name} →<br />
+            <span className="text-sm font-medium">Great Plains Conference</span>
+          </a>
+          <a
+            href={SITES.greatLakes.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#ED1472] hover:bg-pink-700 text-white font-bold rounded-xl shadow px-8 py-5 transition-colors text-xl"
+          >
+            {SITES.greatLakes.name} →<br />
+            <span className="text-sm font-medium">Great Lakes Conference</span>
+          </a>
+        </div>
+      </div>
+
+      {/* Records archive */}
+      <div id="records-section" className="max-w-5xl mx-auto mt-12 p-8 bg-white rounded shadow">
+        <h1 className="text-3xl font-bold mb-4 text-center">Team Midwest Records</h1>
+        <div className="mb-8">
+          <h3 className="text-xl font-semibold mb-2 mt-6">Men's Regional Records</h3>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white border border-gray-300 rounded shadow text-sm">
+              <thead className="bg-[#ED1472] text-white">
+                <tr>
+                  <th className="px-3 py-2">Year</th>
+                  <th className="px-3 py-2">Event</th>
+                  <th className="px-3 py-2">Name</th>
+                  <th className="px-3 py-2">School</th>
+                  <th className="px-3 py-2">Score</th>
+                  <th className="px-3 py-2">Tournament</th>
+                  <th className="px-3 py-2">Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2006</td>
+                  <td className="px-3 py-2">Slalom</td>
+                  <td className="px-3 py-2">Cale Burdick</td>
+                  <td className="px-3 py-2">Purdue</td>
+                  <td className="px-3 py-2">2 @ 41 off</td>
+                  <td className="px-3 py-2">NCWSA Nationals</td>
+                  <td className="px-3 py-2">Bell Aqua - Sacramento, CA</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2006</td>
+                  <td className="px-3 py-2">Trick</td>
+                  <td className="px-3 py-2">Sergio Uribe</td>
+                  <td className="px-3 py-2">Purdue</td>
+                  <td className="px-3 py-2">4,310 points</td>
+                  <td className="px-3 py-2">Purdue Fall Classic</td>
+                  <td className="px-3 py-2">Hawthorn Lake - Danville, IN</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2023</td>
+                  <td className="px-3 py-2">Trick</td>
+                  <td className="px-3 py-2">Aidan Hughes</td>
+                  <td className="px-3 py-2">Michigan State</td>
+                  <td className="px-3 py-2">4,310 points</td>
+                  <td className="px-3 py-2">Spartan Ripfest</td>
+                  <td className="px-3 py-2">South Haven, MI</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2016</td>
+                  <td className="px-3 py-2">Jump</td>
+                  <td className="px-3 py-2">Briant "BSter" Detty</td>
+                  <td className="px-3 py-2">Indiana</td>
+                  <td className="px-3 py-2">166 feet</td>
+                  <td className="px-3 py-2">GL Conference Championships</td>
+                  <td className="px-3 py-2">Pleasant Shores - Van Wert, OH</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="mb-8">
+          <h3 className="text-xl font-semibold mb-2 mt-6">Women's Regional Records</h3>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white border border-gray-300 rounded shadow text-sm">
+              <thead className="bg-[#ED1472] text-white">
+                <tr>
+                  <th className="px-3 py-2">Year</th>
+                  <th className="px-3 py-2">Event</th>
+                  <th className="px-3 py-2">Name</th>
+                  <th className="px-3 py-2">School</th>
+                  <th className="px-3 py-2">Score</th>
+                  <th className="px-3 py-2">Tournament</th>
+                  <th className="px-3 py-2">Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2013</td>
+                  <td className="px-3 py-2">Slalom</td>
+                  <td className="px-3 py-2">Jennifer Kaldor</td>
+                  <td className="px-3 py-2">Wisconsin LaCrosse</td>
+                  <td className="px-3 py-2">3 @ 35 off</td>
+                  <td className="px-3 py-2">Shane DeJong Fall Classic</td>
+                  <td className="px-3 py-2">Dream Lakes - Cambridge, IA</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2013</td>
+                  <td className="px-3 py-2">Trick</td>
+                  <td className="px-3 py-2">Emily Van Treese</td>
+                  <td className="px-3 py-2">Miami (OH)</td>
+                  <td className="px-3 py-2">2,740 points</td>
+                  <td className="px-3 py-2">Ball State Fling</td>
+                  <td className="px-3 py-2">Pleasant Shores - Van Wert, OH</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2015</td>
+                  <td className="px-3 py-2">Jump</td>
+                  <td className="px-3 py-2">Riley Daulton</td>
+                  <td className="px-3 py-2">Ohio State</td>
+                  <td className="px-3 py-2">127 feet</td>
+                  <td className="px-3 py-2">NCWSA All Stars</td>
+                  <td className="px-3 py-2">Borderline Lake - Blaine, WA</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="mb-8">
+          <h3 className="text-xl font-semibold mb-2 mt-6">Men's Regional Tournament Records</h3>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white border border-gray-300 rounded shadow text-sm">
+              <thead className="bg-[#ED1472] text-white">
+                <tr>
+                  <th className="px-3 py-2">Year</th>
+                  <th className="px-3 py-2">Event</th>
+                  <th className="px-3 py-2">Name</th>
+                  <th className="px-3 py-2">School</th>
+                  <th className="px-3 py-2">Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2004</td>
+                  <td className="px-3 py-2">Slalom</td>
+                  <td className="px-3 py-2">Cale Burdick</td>
+                  <td className="px-3 py-2">Purdue</td>
+                  <td className="px-3 py-2">2 @ 39.5 off</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2023</td>
+                  <td className="px-3 py-2">Trick</td>
+                  <td className="px-3 py-2">Aidan Hughes</td>
+                  <td className="px-3 py-2">Michigan State</td>
+                  <td className="px-3 py-2">4,110 points</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2006</td>
+                  <td className="px-3 py-2">Jump</td>
+                  <td className="px-3 py-2">Cale Burdick</td>
+                  <td className="px-3 py-2">Purdue</td>
+                  <td className="px-3 py-2">162 feet</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="mb-8">
+          <h3 className="text-xl font-semibold mb-2 mt-6">Women's Regional Tournament Records</h3>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white border border-gray-300 rounded shadow text-sm">
+              <thead className="bg-[#ED1472] text-white">
+                <tr>
+                  <th className="px-3 py-2">Year</th>
+                  <th className="px-3 py-2">Event</th>
+                  <th className="px-3 py-2">Name</th>
+                  <th className="px-3 py-2">School</th>
+                  <th className="px-3 py-2">Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2013</td>
+                  <td className="px-3 py-2">Slalom</td>
+                  <td className="px-3 py-2">Jennifer Kaldor</td>
+                  <td className="px-3 py-2">Wisconsin LaCrosse</td>
+                  <td className="px-3 py-2">3 @ 35 off</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2013</td>
+                  <td className="px-3 py-2">Trick</td>
+                  <td className="px-3 py-2">Emily Van Treese</td>
+                  <td className="px-3 py-2">Miami (OH)</td>
+                  <td className="px-3 py-2">2,160 points</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2016</td>
+                  <td className="px-3 py-2">Jump</td>
+                  <td className="px-3 py-2">Riley Daulton</td>
+                  <td className="px-3 py-2">Ohio State</td>
+                  <td className="px-3 py-2">125 feet</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="mb-8">
+          <h3 className="text-xl font-semibold mb-2 mt-6">Men's Great Lakes Records</h3>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white border border-gray-300 rounded shadow text-sm">
+              <thead className="bg-[#ED1472] text-white">
+                <tr>
+                  <th className="px-3 py-2">Year</th>
+                  <th className="px-3 py-2">Event</th>
+                  <th className="px-3 py-2">Name</th>
+                  <th className="px-3 py-2">School</th>
+                  <th className="px-3 py-2">Score</th>
+                  <th className="px-3 py-2">Tournament</th>
+                  <th className="px-3 py-2">Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2006</td>
+                  <td className="px-3 py-2">Slalom</td>
+                  <td className="px-3 py-2">Cale Burdick</td>
+                  <td className="px-3 py-2">Purdue</td>
+                  <td className="px-3 py-2">2 @ 41 off</td>
+                  <td className="px-3 py-2">NCWSA Nationals</td>
+                  <td className="px-3 py-2">Bell Aqua - Sacramento, CA</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2006</td>
+                  <td className="px-3 py-2">Trick</td>
+                  <td className="px-3 py-2">Sergio Uribe</td>
+                  <td className="px-3 py-2">Purdue</td>
+                  <td className="px-3 py-2">4,310 points</td>
+                  <td className="px-3 py-2">Purdue Fall Classic</td>
+                  <td className="px-3 py-2">Hawthorn Lake - Danville, IN</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2023</td>
+                  <td className="px-3 py-2">Trick</td>
+                  <td className="px-3 py-2">Aidan Hughes</td>
+                  <td className="px-3 py-2">Michigan State</td>
+                  <td className="px-3 py-2">4,310 points</td>
+                  <td className="px-3 py-2">Spartan Ripfest</td>
+                  <td className="px-3 py-2">South Haven, MI</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2016</td>
+                  <td className="px-3 py-2">Jump</td>
+                  <td className="px-3 py-2">Briant &quot;BSter&quot; Detty</td>
+                  <td className="px-3 py-2">Indiana</td>
+                  <td className="px-3 py-2">166 feet</td>
+                  <td className="px-3 py-2">GL Conference Championships</td>
+                  <td className="px-3 py-2">Pleasant Shores - Van Wert, OH</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="mb-8">
+          <h3 className="text-xl font-semibold mb-2 mt-6">Women's Great Lakes Records</h3>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white border border-gray-300 rounded shadow text-sm">
+              <thead className="bg-[#ED1472] text-white">
+                <tr>
+                  <th className="px-3 py-2">Year</th>
+                  <th className="px-3 py-2">Event</th>
+                  <th className="px-3 py-2">Name</th>
+                  <th className="px-3 py-2">School</th>
+                  <th className="px-3 py-2">Score</th>
+                  <th className="px-3 py-2">Tournament</th>
+                  <th className="px-3 py-2">Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2006</td>
+                  <td className="px-3 py-2">Slalom</td>
+                  <td className="px-3 py-2">Kerbie Reader</td>
+                  <td className="px-3 py-2">Michigan</td>
+                  <td className="px-3 py-2">2 @ 35 off</td>
+                  <td className="px-3 py-2">Regionals</td>
+                  <td className="px-3 py-2">PITS - Decatur, IL</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2009</td>
+                  <td className="px-3 py-2">Slalom</td>
+                  <td className="px-3 py-2">Kayla McClure</td>
+                  <td className="px-3 py-2">Ball State</td>
+                  <td className="px-3 py-2">2 @ 35 off</td>
+                  <td className="px-3 py-2">Bearcat Buoy Battle</td>
+                  <td className="px-3 py-2">Lake Lottawatta - Hamilton, OH</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2013</td>
+                  <td className="px-3 py-2">Trick</td>
+                  <td className="px-3 py-2">Emily Van Treese</td>
+                  <td className="px-3 py-2">Miami (OH)</td>
+                  <td className="px-3 py-2">2,740 points</td>
+                  <td className="px-3 py-2">Ball State Fling</td>
+                  <td className="px-3 py-2">Pleasant Shores - Van Wert, OH</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2015</td>
+                  <td className="px-3 py-2">Jump</td>
+                  <td className="px-3 py-2">Riley Daulton</td>
+                  <td className="px-3 py-2">Ohio State</td>
+                  <td className="px-3 py-2">127 feet</td>
+                  <td className="px-3 py-2">NCWSA All Stars</td>
+                  <td className="px-3 py-2">Borderline Lake - Blaine, WA</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="mb-8">
+          <h3 className="text-xl font-semibold mb-2 mt-6">Men's Great Plains Records</h3>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white border border-gray-300 rounded shadow text-sm">
+              <thead className="bg-[#ED1472] text-white">
+                <tr>
+                  <th className="px-3 py-2">Year</th>
+                  <th className="px-3 py-2">Event</th>
+                  <th className="px-3 py-2">Name</th>
+                  <th className="px-3 py-2">School</th>
+                  <th className="px-3 py-2">Score</th>
+                  <th className="px-3 py-2">Tournament</th>
+                  <th className="px-3 py-2">Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2011</td>
+                  <td className="px-3 py-2">Slalom</td>
+                  <td className="px-3 py-2">Paul Tierney</td>
+                  <td className="px-3 py-2">Missouri State</td>
+                  <td className="px-3 py-2">2 @ 38 off</td>
+                  <td className="px-3 py-2">Mo State Fall Showdown</td>
+                  <td className="px-3 py-2">Lake Freddie - Hartville, MO</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2009</td>
+                  <td className="px-3 py-2">Trick</td>
+                  <td className="px-3 py-2">Tyler Lorenz</td>
+                  <td className="px-3 py-2">Wisconsin Madison</td>
+                  <td className="px-3 py-2">4,160 points</td>
+                  <td className="px-3 py-2">ISU Ski Wars</td>
+                  <td className="px-3 py-2">Dream Lakes - Huxley, IA</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2001</td>
+                  <td className="px-3 py-2">Jump</td>
+                  <td className="px-3 py-2">Dave Dlugosh</td>
+                  <td className="px-3 py-2">Kansas State</td>
+                  <td className="px-3 py-2">161 feet</td>
+                  <td className="px-3 py-2">Regionals</td>
+                  <td className="px-3 py-2">PITS - Decatur, IL</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="mb-8">
+          <h3 className="text-xl font-semibold mb-2 mt-6">Women's Great Plains Records</h3>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white border border-gray-300 rounded shadow text-sm">
+              <thead className="bg-[#ED1472] text-white">
+                <tr>
+                  <th className="px-3 py-2">Year</th>
+                  <th className="px-3 py-2">Event</th>
+                  <th className="px-3 py-2">Name</th>
+                  <th className="px-3 py-2">School</th>
+                  <th className="px-3 py-2">Score</th>
+                  <th className="px-3 py-2">Tournament</th>
+                  <th className="px-3 py-2">Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2013</td>
+                  <td className="px-3 py-2">Slalom</td>
+                  <td className="px-3 py-2">Jennifer Kaldor</td>
+                  <td className="px-3 py-2">Wisconsin LaCrosse</td>
+                  <td className="px-3 py-2">3 @ 35 off</td>
+                  <td className="px-3 py-2">Shane DeJong Fall Classic</td>
+                  <td className="px-3 py-2">Dream Lakes - Cambridge, IA</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2023</td>
+                  <td className="px-3 py-2">Trick</td>
+                  <td className="px-3 py-2">Sophie Janzig</td>
+                  <td className="px-3 py-2">Minnesota</td>
+                  <td className="px-3 py-2">2,230 points</td>
+                  <td className="px-3 py-2">GP Conference Championships</td>
+                  <td className="px-3 py-2">Dream Lakes, Huxley, IA</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2006</td>
+                  <td className="px-3 py-2">Jump</td>
+                  <td className="px-3 py-2">Christy Madden</td>
+                  <td className="px-3 py-2">Illinois</td>
+                  <td className="px-3 py-2">103 ft</td>
+                  <td className="px-3 py-2">NCWSA Nationals</td>
+                  <td className="px-3 py-2">Bell Aqua - Sacramento, CA</td>
+                </tr>
+                <tr className="even:bg-gray-100">
+                  <td className="px-3 py-2">2008</td>
+                  <td className="px-3 py-2">Jump</td>
+                  <td className="px-3 py-2">Melanie Cyra</td>
+                  <td className="px-3 py-2">Wisconsin Madison</td>
+                  <td className="px-3 py-2">103 ft</td>
+                  <td className="px-3 py-2">NCWSA Nationals</td>
+                  <td className="px-3 py-2">Firebird Lake - Chandler, AZ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      {/* Hall of Fame */}
+      <div id="hof-section" className="max-w-5xl mx-auto mt-12 mb-24 p-8 bg-white rounded shadow text-center">
+        <h1 className="text-3xl font-bold mb-4">Hall of Fame</h1>
+        <p className="text-lg leading-relaxed mb-4">
+          The MCWSA Hall of Fame recognizes skiers, leaders, and officials whose dedication and competitive achievements have gone above and beyond to positively impact the sport throughout the Midwest region. Inductees are chosen by the Hall of Fame selection committee and inductions will take place at Winter Conference. Nominations due by January 1st.
+        </p>
+        <div className="text-center mx-auto max-w-5xl mb-4">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdQV841b9EurV-hL_HtrJ8A7k9QBADMKWhxjsmbdfsXtIEjAA/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-2 mb-4 bg-pink-600 text-white font-semibold rounded hover:bg-pink-700 transition"
+          >
+            Nomination Form
+          </a>
+        </div>
+        <div className="text-left mx-auto max-w-5xl mb-4">
+          <h2 className="mb-2">Rules and Requirements for Nominations</h2>
+          <ul className="list-disc list-inside mb-4 ml-6">
+            <li>Any MCWSA affiliated USA Waterski AND WAKE SPORTS Member will be allowed to submit nominations to the Hall of Fame Committee.</li>
+            <li>Any nominations will need to be submitted in writing to the Hall of Fame Committee Chair. Verbal nominations will not be accepted.</li>
+            <li>Nominations are due by January 1st to the Midwest Awards Chair.</li>
+            <li>Committee will consist of the Regional Awards Chair, the Regional Alumni Chair, and the MCWSA Executive Board as the HOF Committee Chair.</li>
+            <li>Candidates will be sent to captains to review and submit opinions to the Hall of Fame Committee.</li>
+            <li>Not mandatory to have inductions every year.</li>
+            <li>No more than 2 people will be inducted every year.</li>
+            <li>Nomination approval requires a majority of the Hall of Fame Committee.</li>
+          </ul>
+        </div>
+        <div className="mt-8 p-6 bg-white rounded  text-center">
+          <h2 className="text-2xl font-bold mb-2">Please welcome the 2023 Inaugural Hall of Fame Class!</h2>
+          <p className="text-xl font-semibold mb-2">Congratulations to Christy Kingsmill</p>
+          <img src={`${import.meta.env.BASE_URL}Chrisy Kingsmill.webp`} alt="Christy Kingsmill" className="w-1/2 mx-auto mb-4" />
+          <p className="text-left max-w-5xl mx-auto">
+            Christy Kingsmill has over 15 years of service between the MCWSA and NCWSA during which she influenced many positive
+            changes that helped grow the sport of collegiate water skiing for thousands of people.
+            Aside from her contributions in an administrative role, Christy has made it a point to really get to know skiers on a personal level and act as a role model.
+            Over the years she dedicated every weekend during the season to not only make sure things run smoothly, but also went above and beyond by being an official.
+            She has acted as Chief Judge for many MCWSA conference tournaments, regional tournaments, and as Chief Judge and Assistant Chief Judge for NCWSA nationals on more than one occasion.
+            Christy is a jack of all trades who has held the job as Vice Chair of the Region and has the longest term as chair in the region’s history.
+            Christy also pulled double duty for many years serving on the NCWSA board while also leading the MCWSA. Currently Christy is the President of the NCWSA.
+          </p>
+        </div>
+        <div className="mt-8 p-6 bg-white rounded  text-center">
+          <h2 className="text-2xl font-bold mb-2">Please welcome the 2022 Inaugural Hall of Fame Class!</h2>
+          <p className="text-xl font-semibold mb-2">Congratulations to Jeff Surdej and Cris Kodiak!</p>
+          <img src={`${import.meta.env.BASE_URL}JeffSurdejandCrisKodiak.webp`} alt="Jeff Surdej and Cris Kodiak" className="w-1/2 mx-auto mb-4" />
+          <p className="text-center italic mb-4">Jeff Surdej (left) and Cris Kodiak (right)</p>
+
+          <div className="text-left mx-auto max-w-5xl mb-4">
+            <h2 className="text-center mb-2">Jeff Surdej</h2>
+            <p className="text-left max-w-5xl mx-auto">
+          Jeff Surdej skied for Purdue University from Fall 1994 through Spring 1998 and helped turn Purdue University into a powerhouse in the Midwest that created a decade or more of dominance in the region.
+          Additionally, changes to the team structure helped the team grab elite recruits such as Cale Burdick to help build the longevity of the Purdue team’s dominance well after Jeff had graduated.
+          However, his greatest impact on the Midwest and collegiate skiing as a whole occurs off the water to this day. Jeff is the father of the Team Midwest Winter Conference, starting it with Chad Kodiak.
+          Jeff and his family hosted many collegiate tournaments at Waters Edge in Wilmington, IL as the annual Great Plains Conference Championships location prior to Iowa State’s Dream Lakes.
+          The most epic of these tournaments were dual conference tournaments in the early 2000’s where all teams from both conferences would converge at Waters Edge for one epic tournament.
+          After being the MCWSA Chair Jeff stepped into the National board and has been NCWSA Chair ever since.
+          Jeff has been a judge in the MCWSA and at MCWSA Regionals countless times and has been the appointee for the Midwest as a judge to Nationals and All-Stars a myriad of times over the past twenty+ years as well.
+          At the National level Jeff pushes collegiate skiing to grow and be the best and most fun version of competitive water skiing with NCWSA Nationals being one of the best tournaments in water skiing,
+          if not the best, certainly the most fun! On the National board and as National Chair Jeff has been around and overseen major changes to the NCWSA including the wild-card show (2008),
+          expansion to 20, 22, 23, and 24 team Nationals, the mini-course rule (2017), and many more changes that make sure collegiate skiing is always fun and possibly the best implementation of tournament water skiing.
+          The impact of Jeff Surdej on collegiate water skiing will be measured for many years to come, and he is an outstanding candidate for the Hall of Fame.
+          </p>
+          </div>
+          <div className="text-left mx-auto max-w-5xl mb-4">
+            <h2 className="text-center mb-2">Cris Kodiak</h2>
+            <p className="text-left max-w-5xl mx-auto">
+            Cris Kodiak Skied for Purdue University from 2001-2004, and held many leadership positions in his time there,
+            Team Secretary in 2002, Treasurer and Recruitment Chair 2003, Men’s Team Captain 2004.
+            His on the water accomplishments include 2004 Midwest regionals 4th place – Men’s Trick ,
+            Midwest All Star Team member in Trick and Jump all 4 years. With personal bests of 2@22 off, 1340 (single pass), 126 feet.
+            Cris was a leader off the water as much as he was on the water.
+            Starting as the Great Lakes Conference Chairman from 2002-2004, Midwest Region Vice Chair 2004-2007, and Regional Chairman from 2007-2011,
+            Cris helped the Midwest region establish dominance in the collegiate all-stars tournament by managing the first two titles.
+            Cris was the tournament director of the 2005 NCWSA nationals, where Team Midwest debuted the famous pink,
+            Cris brought fun into the tournament by hosting a biggest spray competition,
+            a tournament video and a stunt jumper who was set on fire to kick off the men’s jump event.
+            With the NCWSA leadership Cris has helped with many rule changes including the Women’s equality scoring rule change,
+            non-scoring re-ride jump rule change, and created the wild card concept for additional bids to two divisions in NCWSA.
+            Helped in the rewriting of the National Qualification Standards Cris has also hosted the Wild Card Selection Show for multiple years with Jeff Surdej.
+            Cris also served as NCWSA Secretary 2011-2013 and is an Honorary National Director for Life.
+            Cris also served as Manager for the 2008 World university team, which took home Gold.
+            The impact of Cris Kodiak helped shape the Midwest region into what it is today.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <FooterNav
+      links={[
+        { label: "The Split", id: "split-section" },
+        { label: "Records", id: "records-section" },
+        { label: "Hall of Fame", id: "hof-section" },
+      ]}
+    />
+    </>
+  );
+}
