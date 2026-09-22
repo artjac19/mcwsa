@@ -365,13 +365,13 @@ export default function Legacy() {
               </thead>
               <tbody>
                 <tr className="even:bg-gray-100">
-                  <td className="px-3 py-2">2011</td>
+                  <td className="px-3 py-2">2026</td>
                   <td className="px-3 py-2">Slalom</td>
-                  <td className="px-3 py-2">Paul Tierney</td>
-                  <td className="px-3 py-2">Missouri State</td>
-                  <td className="px-3 py-2">2 @ 38 off</td>
-                  <td className="px-3 py-2">Mo State Fall Showdown</td>
-                  <td className="px-3 py-2">Lake Freddie - Hartville, MO</td>
+                  <td className="px-3 py-2">Dylan Anderson</td>
+                  <td className="px-3 py-2">Kansas State</td>
+                  <td className="px-3 py-2">5 @ 38 off</td>
+                  <td className="px-3 py-2">Husker Ripfest</td>
+                  <td className="px-3 py-2">Mystic Lakes - Maize, KS</td>
                 </tr>
                 <tr className="even:bg-gray-100">
                   <td className="px-3 py-2">2009</td>
